@@ -1,0 +1,46 @@
+//==============================================================================
+define LargeNorseShield
+{
+	SetSelector
+	{
+			TechLogic none/Copper shields/Bronze shields/Iron shields/Dragonscale Shields
+			set hotspot
+			{
+				version
+				{
+					visualnone jimmy
+				}
+			}
+			set hotspot
+			{
+				version
+				{
+					visual Attachments N Shield Large Copper
+				}
+			}
+			set hotspot
+			{
+				version
+				{
+					visual Attachments N Shield Large Bronze
+					ReplaceTexture Attachments N Shield Copper/Attachments N Shield Bronze
+				}
+			}
+			set hotspot
+			{
+				version
+				{
+					visual Attachments N Shield Large Iron
+					ReplaceTexture Attachments N Shield Copper/Attachments N Shield Iron
+				}
+			}
+			set hotspot
+			{
+				version
+				{
+					visual Attachments N Shield Large Iron
+					ReplaceTexture Attachments N Shield Copper/Attachments N Shield Thor
+				}
+			}
+	}
+}

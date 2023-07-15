@@ -1,0 +1,49 @@
+//==============================================================================
+// Spear defines_anim.txt
+//==============================================================================
+
+//==============================================================================
+define Spear
+{
+  SetSelector
+  {
+    Techlogic None/Greatest of Fifty
+    SetSelector
+    {
+     TechLogic Copper Weapons/Bronze Weapons/Iron Weapons
+     set hotspot
+     {
+        version
+        {
+           Visual Attachments A Spear Copper
+        }
+     }
+     set hotspot
+     {
+        version
+        {
+           Visual Attachments A Spear Bronze
+        }
+     }
+     set hotspot
+     {
+        version
+        {
+           Visual Attachments A Spear Iron
+        }
+     }
+    }
+    SetSelector
+    {
+     set hotspot
+     {
+        version
+        {
+           Visual Attachments A Spear Iron
+	replacetexture attachments a spear iron/attachments a spear cyan
+        }
+     }
+    }
+  }
+}
+

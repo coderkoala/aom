@@ -1,0 +1,165 @@
+//==============================================================================
+// goat_anim.txt
+//==============================================================================
+
+
+define heroglow
+{
+   set hotspot
+   {
+      version
+      {
+         Visualparticle SFX A Hero Glow Small
+      }
+   }
+}
+
+
+define shine
+{
+   set hotspot
+   {
+      version
+      {
+         Visualparticle SFX A Armor Glow Small
+      }
+   }
+}
+
+
+//==============================================================================
+anim bored
+{
+   SetSelector
+   {
+	  InventoryLogic 25 75
+      set hotspot
+      {
+         version
+         {
+		      Visual Animal Goat_boredA
+connect attachpoint heroglow hotspot
+connect attachpoint shine hotspot
+replacetexture animal goat map/animal gold fleece
+         }
+       }
+	  set hotspot
+	  {
+         version
+         {
+            Visual Animal Goat Fat_boredA
+connect attachpoint shine hotspot
+replacetexture animal goat map/animal gold fleece
+         }
+       }
+   }
+}
+
+//==============================================================================
+anim death
+{
+   SetSelector
+   {
+	  InventoryLogic 25 75
+      set hotspot
+      {
+         version
+         {
+		      Visual Animal Goat_deathA
+connect attachpoint shine hotspot
+replacetexture animal goat map/animal gold fleece
+         }
+       }
+	  set hotspot
+	  {
+         version
+         {
+            Visual Animal Goat Fat_deathA
+connect attachpoint shine hotspot
+replacetexture animal goat map/animal gold fleece
+         }
+       }
+   }
+}
+
+//==============================================================================
+anim walk
+{
+   SetSelector
+   {
+	  InventoryLogic 25 75
+      set hotspot
+      {
+         version
+         {
+		      Visual Animal Goat_walkA
+connect attachpoint shine hotspot
+replacetexture animal goat map/animal gold fleece
+connect attachpoint heroglow hotspot
+         }
+       }
+	  set hotspot
+	  {
+         version
+         {
+            Visual Animal Goat Fat_walkA
+connect attachpoint shine hotspot
+replacetexture animal goat map/animal gold fleece
+         }
+       }
+   }
+}
+
+//==============================================================================
+anim idle
+{
+   SetSelector
+   {
+	  InventoryLogic 25 75
+      set hotspot
+      {
+         version
+         {
+		      Visual Animal Goat_idleA
+replacetexture animal goat map/animal gold fleece
+connect attachpoint shine hotspot
+connect attachpoint heroglow hotspot
+         }
+   	     version
+         {
+		      Visual Animal Goat_idleB
+replacetexture animal goat map/animal gold fleece
+connect attachpoint shine hotspot
+connect attachpoint heroglow hotspot
+         }
+		 version
+         {
+		      Visual Animal Goat_idleC
+replacetexture animal goat map/animal gold fleece
+connect attachpoint shine hotspot
+connect attachpoint heroglow hotspot
+         }
+      }
+	  set hotspot
+	  {
+         version
+         {
+            Visual Animal Goat Fat_IdleA
+replacetexture animal goat map/animal gold fleece
+connect attachpoint shine hotspot
+         }
+         version
+         {
+            Visual Animal Goat Fat_IdleB
+replacetexture animal goat map/animal gold fleece
+connect attachpoint shine hotspot
+         }
+         version
+         {
+            Visual Animal Goat Fat_IdleC
+replacetexture animal goat map/animal gold fleece
+connect attachpoint shine hotspot
+         }
+      }
+   }
+}

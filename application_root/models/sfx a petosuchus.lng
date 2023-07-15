@@ -1,0 +1,35 @@
+<lightning>
+
+   <width>.8</width>
+   <BranchWidth>0.0</BranchWidth>
+   <segmentLength>0.0</segmentLength>
+
+   <MinBranchLength>0.0</MinBranchLength>
+   <MaxBranchLength>0.0</MaxBranchLength>
+   <MaxBranchLengthFactor>0.0</MaxBranchLengthFactor>
+
+   <material>
+      <texture>special E petesuchos beam</texture>
+      <blend>additive</blend>
+   </material>
+
+   <MinPerturbAngle>0.0</MinPerturbAngle>
+   <MaxPerturbAngle>0.0</MaxPerturbAngle>
+   <MinBranchAngle>0.0</MinBranchAngle>
+   <MaxBranchAngle>0.0</MaxBranchAngle>
+
+   <branch>
+      <startChance>0</startChance>
+      <minChance>0.0</minChance>
+      <maxChance>0</maxChance>
+      <chanceIncFactor>0.0</chanceIncFactor>
+      <chanceDecFactor>0.0</chanceDecFactor>
+   </branch>
+
+   <anim>
+		<key time='0.00' brightness='0.0'/>
+		<key time='0.50' brightness='0.5'/>
+		<key time='1.60' brightness='0.0'/>
+   </anim>
+
+</lightning>

@@ -1,0 +1,58 @@
+
+//==============================================================================
+define Norse2HandAxe
+{
+  	SetSelector
+  	{
+    		Techlogic None/Swine Array
+    		SetSelector
+    		{
+      			TechLogic none/Copper Weapons/Bronze Weapons/Iron Weapons/Hammer of the Gods
+      			set hotspot
+      			{
+         			version
+         			{
+            				Visual Attachments N Axe 2handed Standard
+         			}
+      			}
+      			set hotspot
+      			{
+         			version
+         			{
+            				Visual Attachments N Axe 2handed Copper
+         			}
+      			}
+      			set hotspot
+      			{
+         			version
+         			{
+            				Visual Attachments N Axe 2handed Bronze
+         			}
+      			}
+      			set hotspot
+      			{
+         			version
+         			{
+            				Visual Attachments N Axe 2handed Iron
+         			}
+      			}
+      			set hotspot
+      			{
+         			version
+         			{
+            				Visual Attachments E Axe 2handed Bronze
+        			}
+      			}
+    		}
+    		SetSelector
+    		{
+      			set hotspot
+      			{
+         			version
+         			{
+            				Visual Attachments E Axe 2handed Iron
+	       			}
+      			}
+    		}
+  	}
+}

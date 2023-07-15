@@ -1,0 +1,107 @@
+//==============================================================================
+// pig_anim.txt
+//==============================================================================
+
+
+//==============================================================================
+anim Bored
+{
+   SetSelector
+   {
+Techlogic none/Husbandry
+      set hotspot
+      {
+         version
+         {
+            Visual Animal pig_boredA
+         }
+         
+      }
+      set hotspot
+      {
+         version
+         {
+            Visual Animal pig_boredA
+	replacetexture animal pig map/animal pig map husbandry
+         }
+         
+      }
+   }
+}
+
+//==============================================================================
+anim Death
+{
+   SetSelector
+   {
+Techlogic none/Husbandry
+      set hotspot
+      {
+         version
+         {
+            Visual Animal pig_deathA
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+            Visual Animal pig_deathA
+	replacetexture animal pig map/animal pig map husbandry
+         }
+      }
+   }
+}
+
+//==============================================================================
+anim Idle
+{
+   SetSelector
+   {
+Techlogic none/Husbandry
+      set hotspot
+      {
+         version
+         {
+            Visual Animal pig_idleA
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+            Visual Animal pig_idleA
+	replacetexture animal pig map/animal pig map husbandry
+         }
+      }
+   }
+}
+
+//==============================================================================
+anim Walk
+{
+   SetSelector
+   {
+Techlogic none/Husbandry
+      set hotspot
+      {
+         version
+         {
+            Visual Animal pig_walkA
+            tag FootstepLeft 0.30 true   
+            tag FootstepRight 0.80 true   
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+            Visual Animal pig_walkA
+            tag FootstepLeft 0.30 true   
+            tag FootstepRight 0.80 true   
+	replacetexture animal pig map/animal pig map husbandry
+         }
+      }
+   }
+}
+

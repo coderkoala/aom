@@ -1,0 +1,648 @@
+//==============================================================================
+// Priest_anim.txt funeral rites added by Xentelian
+//==============================================================================
+
+//==============================================================================
+define heroglow
+{
+   set hotspot
+   {
+      version
+      {
+         Visualparticle SFX A Hero Glow Small
+      }
+   }
+}
+
+//==============================================================================
+define Head
+{
+   SetSelector
+   {
+      set hotspot
+      {
+         version
+         {
+            Visual Special E Priest Head
+         }
+      }
+   }
+}
+
+//==============================================================================
+define Staff
+{
+   set hotspot
+   {
+      version
+      {
+         Visual Special E Priest Staff
+      }
+   }
+}
+
+//==============================================================================
+anim Idle
+{
+  SetSelector
+  {
+    Techlogic None/Funeral Rites
+    SetSelector
+    {
+	CinematicLogic
+	SetSelector
+	{
+		ContainLogic
+   		SetSelector 
+   		{
+				set hotspot
+				{
+					version
+         		{
+						Visual Special E Priest_idleA
+						Connect FRONTABDOMEN heroglow hotspot
+	        		}
+				}
+			}
+   		SetSelector 
+   		{
+				set hotspot
+				{
+					version
+         		{
+						Visual Special E Priest_CarryIdle
+						Connect FRONTABDOMEN heroglow hotspot
+	        		}
+				}
+			}
+		}
+   	SetSelector 
+   	{
+			set hotspot
+			{
+				version
+				{
+					Visual Special E Priest_idleA
+				}
+			}
+	}
+    }
+    SetSelector
+    {
+	CinematicLogic
+	SetSelector
+	{
+		ContainLogic
+   		SetSelector 
+   		{
+				set hotspot
+				{
+					version
+         		{
+						Visual Special E Priest_idleA
+			replacetexture special e priest/special e priest upgrade
+			replacetexture special e priest staff/special e priest staff upgrade
+						Connect FRONTABDOMEN heroglow hotspot
+	        		}
+				}
+			}
+   		SetSelector 
+   		{
+				set hotspot
+				{
+					version
+         		{
+						Visual Special E Priest_CarryIdle
+			replacetexture special e priest/special e priest upgrade
+			replacetexture special e priest staff/special e priest staff upgrade
+						Connect FRONTABDOMEN heroglow hotspot
+	        		}
+				}
+			}
+		}
+   	SetSelector 
+   	{
+			set hotspot
+			{
+				version
+				{
+					Visual Special E Priest_idleA
+			replacetexture special e priest/special e priest upgrade
+			replacetexture special e priest staff/special e priest staff upgrade
+				}
+			}
+	}
+    }
+  }
+}
+//==============================================================================
+anim Flail
+{
+   SetSelector
+   {
+   Techlogic None/Funeral Rites
+      set hotspot
+      {
+         version
+         {
+            Visual Special E Priest_FlailA
+				Connect FRONTABDOMEN heroglow hotspot
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+            Visual Special E Priest_FlailA
+				Connect FRONTABDOMEN heroglow hotspot
+			replacetexture special e priest/special e priest upgrade
+			replacetexture special e priest staff/special e priest staff upgrade
+         }
+      }
+   }
+}
+
+//==============================================================================
+anim Bored
+{
+  SetSelector
+  {
+    Techlogic None/Funeral Rites
+    SetSelector
+    {
+		CinematicLogic
+		SetSelector
+		{
+			ContainLogic
+			SetSelector
+			{
+				set hotspot
+				{
+					version
+					{
+						Visual Special E Priest_boredA
+						Connect FRONTABDOMEN heroglow hotspot
+					}
+				}
+			}
+			SetSelector
+			{
+				set hotspot
+				{
+					version
+					{
+						Visual Special E Priest_CarryBored
+						Connect FRONTABDOMEN heroglow hotspot
+					}
+				}
+			}
+		}
+   	SetSelector 
+   	{
+			set hotspot
+         {
+            version
+            {
+               Visual Special E Priest_idleA
+            }
+         }
+		}
+    }
+    SetSelector
+    {
+		CinematicLogic
+		SetSelector
+		{
+			ContainLogic
+			SetSelector
+			{
+				set hotspot
+				{
+					version
+					{
+						Visual Special E Priest_boredA
+			replacetexture special e priest/special e priest upgrade
+			replacetexture special e priest staff/special e priest staff upgrade
+						Connect FRONTABDOMEN heroglow hotspot
+					}
+				}
+			}
+			SetSelector
+			{
+				set hotspot
+				{
+					version
+					{
+						Visual Special E Priest_CarryBored
+			replacetexture special e priest/special e priest upgrade
+			replacetexture special e priest staff/special e priest staff upgrade
+						Connect FRONTABDOMEN heroglow hotspot
+					}
+				}
+			}
+		}
+   	SetSelector 
+   	{
+			set hotspot
+         {
+            version
+            {
+               Visual Special E Priest_idleA
+			replacetexture special e priest/special e priest upgrade
+			replacetexture special e priest staff/special e priest staff upgrade
+            }
+         }
+		}
+    }
+  }
+}
+
+
+//==============================================================================
+anim RangedAttack
+{
+   SetSelector
+   {
+   Techlogic None/Funeral Rites
+      set hotspot
+      {
+         version
+         {
+            Visual Special E Priest_attackA
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+            tag Attack 0.61 true   
+            tag GenericSound 0.40 true   
+            tag SpecificSoundSet 0.47 false SwordSwing checkVisible 
+//-- end auto generated section
+				Connect FRONTABDOMEN heroglow hotspot
+         }
+      }
+       set hotspot
+      {
+         version
+         {
+            Visual Special E Priest_attackA
+			replacetexture special e priest/special e priest upgrade
+			replacetexture special e priest staff/special e priest staff upgrade
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+            tag Attack 0.61 true   
+            tag GenericSound 0.40 true   
+            tag SpecificSoundSet 0.47 false SwordSwing checkVisible 
+//-- end auto generated section
+				Connect FRONTABDOMEN heroglow hotspot
+         }
+      }
+  }
+}
+
+//==============================================================================
+anim Attack
+{
+   SetSelector
+   {
+   Techlogic None/Funeral Rites
+      set hotspot
+      {
+         version
+         {
+            Visual Special E Priest_attackA
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+            tag Attack 0.58 true   
+            tag GenericSound 0.40 true   
+//-- end auto generated section
+				Connect FRONTABDOMEN heroglow hotspot
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+            Visual Special E Priest_attackA
+			replacetexture special e priest/special e priest upgrade
+			replacetexture special e priest staff/special e priest staff upgrade
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+            tag Attack 0.58 true   
+            tag GenericSound 0.40 true   
+//-- end auto generated section
+				Connect FRONTABDOMEN heroglow hotspot
+         }
+      }
+   }
+}
+
+//==============================================================================
+anim Empower
+{
+   SetSelector
+   {
+   Techlogic None/Funeral Rites
+      set hotspot
+      {
+         version
+         {
+            Visual Special E Priest_EmpowerA
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+            tag Attack 0.40 true   
+            tag GenericSound 0.40 true   
+//-- end auto generated section
+				Connect FRONTABDOMEN heroglow hotspot
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+            Visual Special E Priest_EmpowerA
+			replacetexture special e priest/special e priest upgrade
+			replacetexture special e priest staff/special e priest staff upgrade
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+            tag Attack 0.40 true   
+            tag GenericSound 0.40 true   
+//-- end auto generated section
+				Connect FRONTABDOMEN heroglow hotspot
+         }
+      }
+   }
+}
+
+//==============================================================================
+anim build
+{
+   SetSelector
+   {
+   Techlogic None/Funeral Rites
+      set hotspot
+      {
+         version
+         {
+            Visual Special E Priest_EmpowerA
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+            tag Attack 0.40 true   
+            tag GenericSound 0.40 true   
+            tag SpecificSoundSet 0.00 false PharaohBuild checkVisible 
+//-- end auto generated section
+				Connect FRONTABDOMEN heroglow hotspot
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+            Visual Special E Priest_EmpowerA
+			replacetexture special e priest/special e priest upgrade
+			replacetexture special e priest staff/special e priest staff upgrade
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+            tag Attack 0.40 true   
+            tag GenericSound 0.40 true   
+            tag SpecificSoundSet 0.00 false PharaohBuild checkVisible 
+//-- end auto generated section
+				Connect FRONTABDOMEN heroglow hotspot
+         }
+      }
+   }
+}
+
+//==============================================================================
+anim death
+{
+   SetSelector
+   {
+   Techlogic None/Funeral Rites
+      set hotspot
+      {
+         version
+         {
+            Visual Special E Priest_deathA
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+            Visual Special E Priest_deathA
+			replacetexture special e priest/special e priest upgrade
+			replacetexture special e priest staff/special e priest staff upgrade
+         }
+      }
+   }
+}
+
+
+//==============================================================================
+anim convert
+{
+   SetSelector
+   {
+    Techlogic None/Funeral Rites
+     set hotspot
+      {
+         version
+         {
+            Visual Special E Priest_convert
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+            tag Attack 0.40 true   
+            tag SpecificSoundSet 0.00 false Converting checkVisible 
+//-- end auto generated section
+				Connect FRONTABDOMEN heroglow hotspot
+         }
+      }
+     set hotspot
+      {
+         version
+         {
+            Visual Special E Priest_convert
+			replacetexture special e priest/special e priest upgrade
+			replacetexture special e priest staff/special e priest staff upgrade
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+            tag Attack 0.40 true   
+            tag SpecificSoundSet 0.00 false Converting checkVisible 
+//-- end auto generated section
+				Connect FRONTABDOMEN heroglow hotspot
+         }
+      }
+   }
+}
+
+
+//==============================================================================
+anim walk
+{
+  SetSelector
+  {
+    Techlogic None/Funeral Rites
+    SetSelector
+    {
+		ContainLogic
+		SetSelector
+		{
+			set hotspot
+			{
+				version
+				{
+					Visual Special E Priest_walkA
+	//-- auto generated by the bang animation tool
+	//-- do not hand edit these values
+					tag FootstepLeft 0.75 true   
+					tag FootstepRight 0.30 true   
+	//-- end auto generated section
+					Connect FRONTABDOMEN heroglow hotspot
+				}
+			}
+		}
+		SetSelector
+		{
+			set hotspot
+			{
+				version
+				{
+					Visual Special E Priest_Carry
+	//-- auto generated by the bang animation tool
+	//-- do not hand edit these values
+					tag FootstepLeft 0.75 true   
+					tag FootstepRight 0.30 true   
+	//-- end auto generated section
+					Connect FRONTABDOMEN heroglow hotspot
+				}
+			}
+		}
+    }
+    SetSelector
+    {
+		ContainLogic
+		SetSelector
+		{
+			set hotspot
+			{
+				version
+				{
+					Visual Special E Priest_walkA
+			replacetexture special e priest/special e priest upgrade
+			replacetexture special e priest staff/special e priest staff upgrade
+	//-- auto generated by the bang animation tool
+	//-- do not hand edit these values
+					tag FootstepLeft 0.75 true   
+					tag FootstepRight 0.30 true   
+	//-- end auto generated section
+					Connect FRONTABDOMEN heroglow hotspot
+				}
+			}
+		}
+		SetSelector
+		{
+			set hotspot
+			{
+				version
+				{
+					Visual Special E Priest_Carry
+			replacetexture special e priest/special e priest upgrade
+			replacetexture special e priest staff/special e priest staff upgrade
+	//-- auto generated by the bang animation tool
+	//-- do not hand edit these values
+					tag FootstepLeft 0.75 true   
+					tag FootstepRight 0.30 true   
+	//-- end auto generated section
+					Connect FRONTABDOMEN heroglow hotspot
+				}
+			}
+		}
+    }
+  }
+}
+
+//==============================================================================
+anim Cinematic
+{
+   SetSelector
+   {
+		set hotspot
+      {
+         name EPriest_aomsp21point
+         version
+         {
+            Visual EPriest_aomsp21point
+				Connect TopOfHead Head hotspot
+				connect RightHand Staff hotspot
+         }
+      }
+		set hotspot
+      {
+         name EPriest_EmpowerA
+         version
+         {
+            Visual Special E Priest_EmpowerA
+				Connect TopOfHead Head hotspot
+				connect RightHand Staff hotspot
+         }
+      }
+   }
+}
+
+//==============================================================================
+anim heal
+{
+   SetSelector
+   {
+   Techlogic None/Funeral Rites
+      set hotspot
+      {
+         version
+         {
+            Visual Special E Priest_convert
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+               tag SpecificSoundSet 0.00 false Heal checkVisible 
+//-- end auto generated section
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+            Visual Special E Priest_convert
+			replacetexture special e priest/special e priest upgrade
+			replacetexture special e priest staff/special e priest staff upgrade
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+               tag SpecificSoundSet 0.00 false Heal checkVisible 
+//-- end auto generated section
+         }
+      }
+   }
+}
+
+//==============================================================================
+anim Birth
+{
+   SetSelector
+   {
+   Techlogic None/Funeral Rites
+		set hotspot
+		{
+			version
+         {
+				Visual Special E Priest_BirthA
+				Connect FRONTABDOMEN heroglow hotspot
+	      }
+		}
+		set hotspot
+		{
+			version
+         {
+				Visual Special E Priest_BirthA
+			replacetexture special e priest/special e priest upgrade
+			replacetexture special e priest staff/special e priest staff upgrade
+				Connect FRONTABDOMEN heroglow hotspot
+	      }
+		}
+   }
+}

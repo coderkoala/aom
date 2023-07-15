@@ -1,0 +1,43 @@
+<lightning>
+
+   <width>0.8</width>
+   <BranchWidth>0.3</BranchWidth>
+   <segmentLength>2</segmentLength>
+
+   <MinBranchLength>0.5</MinBranchLength>
+   <MaxBranchLength>2.0</MaxBranchLength>
+   <MaxBranchLengthFactor>10</MaxBranchLengthFactor>
+
+   <material>
+      <texture>sfx wickedpurple</texture>
+      <blend>additive</blend>
+   </material>
+
+   <MinPerturbAngle>10.0</MinPerturbAngle>
+   <MaxPerturbAngle>20</MaxPerturbAngle>
+   <MinBranchAngle>20.0</MinBranchAngle>
+   <MaxBranchAngle>60.0</MaxBranchAngle>
+
+   <branch>
+      <startChance>5</startChance>
+      <minChance>90.0</minChance>
+      <maxChance>90</maxChance>
+      <chanceIncFactor>6.0</chanceIncFactor>
+      <chanceDecFactor>0.2</chanceDecFactor>
+   </branch>
+
+   <anim>
+		<key time='0.00' brightness='0.0'/>
+		<key time='0.1' brightness='1.0'/>
+		<key time='0.2' brightness='0.0'/>
+		<key time='0.3' brightness='1.0'/>
+		<key time='0.4' brightness='0.0'/>
+		<key time='0.5' brightness='1.0'/>
+		<key time='0.6' brightness='0.0'/>
+		<key time='0.7' brightness='1.0'/>
+		<key time='0.8' brightness='0.0'/>
+		<key time='0.9' brightness='1.0'/>
+		<key time='0.99' brightness='0.0'/>
+   </anim>
+
+</lightning>

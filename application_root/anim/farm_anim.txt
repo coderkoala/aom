@@ -1,0 +1,409 @@
+//==============================================================================
+// Farm Plot_anim.txt
+//==============================================================================
+
+//==============================================================================
+anim Idle
+{
+ SetSelector
+ {
+  Techlogic None/Sacred Cats/Winter Harvest
+  SetSelector
+  {
+    Techlogic None/Plow/Irrigation/Flood Control
+    SetSelector
+    {
+      ConstructionLogic 0 33 66
+      set hotspot
+      {
+		version
+		{
+			VisualNone World A Farm Cabbage04
+		}
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage01
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage02
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage03
+         }
+      }
+    }
+    SetSelector
+    {
+      ConstructionLogic 0 33 66
+      set hotspot
+      {
+		version
+		{
+			VisualNone World A Farm Plow
+		}
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage01
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage02
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage03
+         }
+      }
+    }
+    SetSelector
+    {
+      ConstructionLogic 0 33 66
+      set hotspot
+      {
+		version
+		{
+			VisualNone World A Farm Irrigation
+		}
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage01
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage02
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage03
+         }
+      }
+    }
+    SetSelector
+    {
+      ConstructionLogic 0 33 66
+      set hotspot
+      {
+		version
+		{
+			VisualNone World A Farm Floodcontrol
+		}
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage01
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage02
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage03
+         }
+      }
+    }
+  }
+  SetSelector
+  {
+    Techlogic None/Plow/Irrigation/Flood Control
+    SetSelector
+    {
+      ConstructionLogic 0 33 66
+      set hotspot
+      {
+		version
+		{
+			VisualNone World A Farm Sacred Cats
+		}
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage01
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage02
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage03
+         }
+      }
+    }
+    SetSelector
+    {
+      ConstructionLogic 0 33 66
+      set hotspot
+      {
+		version
+		{
+			VisualNone World A Farm Plow Sacred Cats
+		}
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage01
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage02
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage03
+         }
+      }
+    }
+    SetSelector
+    {
+      ConstructionLogic 0 33 66
+      set hotspot
+      {
+		version
+		{
+			VisualNone World A Farm Irrigation Sacred Cats
+		}
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage01
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage02
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage03
+         }
+      }
+    }
+    SetSelector
+    {
+      ConstructionLogic 0 33 66
+      set hotspot
+      {
+		version
+		{
+			VisualNone World A Farm Floodcontrol Sacred Cats
+		}
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage01
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage02
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage03
+         }
+      }
+    }
+  }
+  SetSelector
+  {
+    Techlogic None/Plow/Irrigation/Flood Control
+    SetSelector
+    {
+      ConstructionLogic 0 33 66
+      set hotspot
+      {
+		version
+		{
+			VisualNone World A Farm Winter Harvest
+		}
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage01
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage02
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage03
+         }
+      }
+    }
+    SetSelector
+    {
+      ConstructionLogic 0 33 66
+      set hotspot
+      {
+		version
+		{
+			VisualNone World A Farm Plow Winter Harvest
+		}
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage01
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage02
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage03
+         }
+      }
+    }
+    SetSelector
+    {
+      ConstructionLogic 0 33 66
+      set hotspot
+      {
+		version
+		{
+			VisualNone World A Farm Irrigation Winter Harvest
+		}
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage01
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage02
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage03
+         }
+      }
+    }
+    SetSelector
+    {
+      ConstructionLogic 0 33 66
+      set hotspot
+      {
+		version
+		{
+			VisualNone World A Farm Floodcontrol Winter Harvest
+		}
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage01
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage02
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				VisualNone World A Farm Cabbage03
+         }
+      }
+    }
+  }
+ }	
+}
+

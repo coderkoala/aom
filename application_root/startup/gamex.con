@@ -1,0 +1,655 @@
+////////////////////////////////////
+//  Root mappings
+////////////////////////////////////
+map ("mousex", "root", "movePointerX")
+map ("mousey", "root", "movePointerY")
+map ("alt-enter", "root", "renderWindow")
+map ("enter", "root", "uiCloseDialog()") // ~= press OK
+map ("F8", "root", "gadgetToggle(\"hostgame-dialog\")")
+
+////////////////////////////////////
+// Unused
+////////////////////////////////////
+map (",", "world","uiFlareAtPointer()")
+//map ("", "world","uiClearCursor()")
+map ("a", "game", "enterAttackMoveMode")
+map ("control-shift-v", "game", "uiSummonWorkersToSelectedUnit()")
+map ("a", "game", "enterAttackMoveMode")
+
+
+////////////////////////////////////
+// Chats
+////////////////////////////////////
+map ("enter", "game", "gadgetReal(\"chatInput\") uiIgnoreNextKey")
+
+////////////////////////////////////
+// Misc.
+////////////////////////////////////
+map ("pagedown", "game", "uiChatScroll(0)")
+map ("pageup", "game", "uiChatScroll(1)")
+map ("end", "world", "uiLookAtSelection()")
+map ("pause", "world", "pause()")
+map ("+delete", "game", "uiDeleteSelectedUnit")
+map ("tab","game","uiToggleBuildingQueue() configToggle(\"recordGameViewLock\")")
+map ("capslock", "game", "fog() blackmap()")
+map ("i","game","uiUnBuildSelectedUnit()")
+map ("mouse3", "world", "uiZoomToMinimapEvent()")
+map ("backspace", "world", "uiStopSelectedUnits")
+
+map ("control-shift-alt-c", "world", "cameraNice() cameraLimit(1) cameraLimit(0)")
+
+////////////////////////////////////
+// Minimap
+////////////////////////////////////
+map ("control-tab", "world", "strategicMap")
+map ("control-tab", "strategicmap", "strategicMap")
+map ("mousez", "strategicmap", "uiWheelRotate")
+map ("+arrowup", "strategicmap", "cameraWorldForward")
+map ("+arrowdown", "strategicmap", "cameraWorldBackward")
+map ("+arrowright", "strategicmap", "cameraRight")
+map ("+arrowleft", "strategicmap", "cameraLeft")
+
+////////////////////////////////////
+// Command Panel Functions
+////////////////////////////////////
+map ("alt-q", "game", "unitSetFormationDefault()")
+map ("alt-w", "game", "unitSetFormationBox()")
+map ("alt-e", "game", "unitSetFormationMixed()")
+map ("alt-r", "game", "unitSetFormationSpread()")
+map ("alt-a", "game", "unitSetStanceAggressive()")
+map ("alt-s", "game", "unitSetStanceDefensive()")
+map ("alt-d", "game", "unitSetStancePassive()")
+map ("alt-f", "game", "uiToggleCombatCommands()")
+
+////////////////////////////////////
+// Transform
+////////////////////////////////////
+map ("x", "BuildAccel", "uiTransformSelectedUnit(\"Ulfsark\")")
+map ("g",      "world", "uiTransformSelectedUnit(\"Gate\")")
+map ("alt-F1", "world", "uiTransformSelectedUnit(\"Villager Atlantean Hero\")")
+map ("alt-F2", "world", "uiTransformSelectedUnit(\"Swordsman Hero\") uiTransformSelectedUnit(\"Javelin Cavalry Hero\")")
+map ("alt-F3", "world", "uiTransformSelectedUnit(\"Trident Soldier Hero\") uiTransformSelectedUnit(\"Royal Guard Hero\")")
+map ("alt-F5", "world", "uiTransformSelectedUnit(\"Lancer Hero\") uiTransformSelectedUnit(\"Archer Atlantean Hero\")")
+map ("alt-F6", "world", "uiTransformSelectedUnit(\"Oracle Hero\") uiTransformSelectedUnit(\"Maceman Hero\")")
+
+//map ("shift-alt-F1", "game", "uiFindType(\"AbstractScout\")")
+map ("controlshift-alt-F2", "game", "uiFindType(\"AbstractInfantry\")")
+map ("shift-alt-F3", "game", "uiFindType(\"AbstractArcher\")")
+map ("shift-alt-F5", "game", "uiFindType(\"AbstractCavalry\")")
+map ("shift-alt-F6", "game", "uiFindType(\"EarlyFoodDropsite\") uiFindIdleType(\"Guild\")")
+map ("shift-alt-F7", "game", "uiFindIdleType(\"Hero\")")
+map ("shift-alt-F8", "game", "uiFindIdleType(\"LogicalTypeIdleMilitary\")")
+map ("shift-alt-F9", "game", "uiFindIdleType(\"LogicalTypeNavalMilitary\")")
+map ("shift-alt-F10", "game", "uiFindIdleType(\"MythUnit\")")
+map ("shift-alt-F11", "game", "uiFindType(\"FlyingUnit\")")
+map ("shift-alt-F12", "game", "uiFindType(\"Camera Start\")")
+
+////////////////////////////////////
+// F-keys in "game"
+////////////////////////////////////
+map ("control-shift-F4", "game", "toggleScore()")
+map ("control-shift-F5",  "game",  "toggleTime()")
+map ("F5","game", "modeEnter(\"simulation\") subModeEnter(\"simulation\", \"postgame\")")
+
+////////////////////////////////////
+// Close with F-keys
+////////////////////////////////////
+//map ("F1", "detailHelp", "gadgetUnreal(\"HelpDialog\")")
+//map ("esc","detailHelp", "gadgetUnreal(\"HelpDialog\")")
+map ("F2", "faketechtree", "gadgetUnreal(\"FakeTechTree-Root\")")
+map ("esc","faketechtree", "gadgetUnreal(\"FakeTechTree-Root\")")
+map ("F3", "objectives", "gadgetUnreal(\"objectivesdialog-screen\")")
+map ("esc","objectives", "gadgetUnreal(\"objectivesdialog-screen\")")
+map ("esc", "root", "console()")
+map ("F5", "ChatDialog", "gadgetUnreal(\"MainChatDialog\")")
+map ("esc","ChatDialog", "gadgetUnreal(\"MainChatDialog\")")
+map ("F6", "tributedialog", "gadgetUnreal(\"tribute dialog\")")
+map ("esc","tributedialog", "gadgetUnreal(\"tributedlg\")")
+map ("esc", "postgame", "showGameFromPostGame()")
+map ("F7", "playerstatusdialog", "gadgetUnreal(\"player status\")")
+map ("esc","playerstatusdialog", "gadgetUnreal(\"player status\")")
+map ("F10","mainGameMenu", "hideGameMenu")
+map ("esc","XSDebugger", "gadgetUnReal(\"XSDebugger\")")
+
+////////////////////////////////////
+// Groups
+////////////////////////////////////
+map ("1", "game", "uiClearSelection() uiSelectNumberGroup(1)")
+map ("2", "game", "uiClearSelection() uiSelectNumberGroup(2)")
+map ("3", "game", "uiClearSelection() uiSelectNumberGroup(3)")
+map ("4", "game", "uiClearSelection() uiSelectNumberGroup(4)")
+map ("5", "game", "uiClearSelection() uiSelectNumberGroup(5)")
+map ("6", "game", "uiClearSelection() uiSelectNumberGroup(6)")
+map ("7", "game", "uiClearSelection() uiSelectNumberGroup(7)")
+map ("8", "game", "uiClearSelection() uiSelectNumberGroup(8)")
+map ("9", "game", "uiClearSelection() uiSelectNumberGroup(9)")
+map ("shift-1", "game", "uiAddSelectNumberGroup(1)")
+map ("shift-2", "game", "uiAddSelectNumberGroup(2)")
+map ("shift-3", "game", "uiAddSelectNumberGroup(3)")
+map ("shift-4", "game", "uiAddSelectNumberGroup(4)")
+map ("shift-5", "game", "uiAddSelectNumberGroup(5)")
+map ("shift-6", "game", "uiAddSelectNumberGroup(6)")
+map ("shift-7", "game", "uiAddSelectNumberGroup(7)")
+map ("shift-8", "game", "uiAddSelectNumberGroup(8)")
+map ("shift-9", "game", "uiAddSelectNumberGroup(9)")
+map ("control-1", "game", "uiCreateNumberGroup(1)")
+map ("control-2", "game", "uiCreateNumberGroup(2)")
+map ("control-3", "game", "uiCreateNumberGroup(3)")
+map ("control-4", "game", "uiCreateNumberGroup(4)")
+map ("control-5", "game", "uiCreateNumberGroup(5)")
+map ("control-6", "game", "uiCreateNumberGroup(6)")
+map ("control-7", "game", "uiCreateNumberGroup(7)")
+map ("control-8", "game", "uiCreateNumberGroup(8)")
+map ("control-9", "game", "uiCreateNumberGroup(9)")
+map ("control-0", "game", "uiRemoveFromAnyNumberGroup")
+map ("alt-1", "game", "uiSelectNumberGroup(1) uiLookAtNumberGroup(1)")
+map ("alt-2", "game", "uiSelectNumberGroup(2) uiLookAtNumberGroup(2)")
+map ("alt-3", "game", "uiSelectNumberGroup(3) uiLookAtNumberGroup(3)")
+map ("alt-4", "game", "uiSelectNumberGroup(4) uiLookAtNumberGroup(4)")
+map ("alt-5", "game", "uiSelectNumberGroup(5) uiLookAtNumberGroup(5)")
+map ("alt-6", "game", "uiSelectNumberGroup(6) uiLookAtNumberGroup(6)")
+map ("alt-7", "game", "uiSelectNumberGroup(7) uiLookAtNumberGroup(7)")
+map ("alt-8", "game", "uiSelectNumberGroup(8) uiLookAtNumberGroup(8)")
+map ("alt-9", "game", "uiSelectNumberGroup(9) uiLookAtNumberGroup(9)")
+
+////////////////////////////////////
+// Misc. Finder
+////////////////////////////////////
+map ("mousez",             "game", "uiZoomToMinimapEvent()")
+map("esc","game","trackInsert() trackAddWaypoint() uiEjectGarrisonedUnits() trackPlay(1,-1)")
+map ("control-space",    "game", "uiFindType(\"AbstractScout\") trackPlay(1,-1)")
+map ("control-shift-space",        "game", "trackInsert() trackAddWaypoint() uiFindType(\"AbstractScout\")")
+map (".", "game", "trackInsert() trackAddWaypoint() uiFindType(\"Herdable\") trackPlay(1,-1)")
+map ("shift-F1", "game", "uiFindIdleType(\"LogicalTypeIdleCivilian\")")
+map ("F1",    "game", "uiFindIdleType(\"AbstractVillager\")")
+map ("F2", "game", "trackInsert() trackAddWaypoint() uiFindType(\"Hero\")")
+map ("F3", "game", "trackInsert() trackAddWaypoint() uiFindIdleType(\"LogicalTypeIdleMilitary\")")
+map ("F4", "game", "trackInsert() trackAddWaypoint() uiFindIdleType(\"MythUnit\")")
+
+
+////////////////////////////////////
+// Control-Finder
+////////////////////////////////////
+map ("control-a", "game", "uiFindType(\"AbstractArcheryRange\") trackPlay(1,-1)")
+map ("control-b", "game", "uiFindType(\"AbstractBarracks\") trackPlay(1,-1)")
+map ("control-c", "game", "uiFindType(\"Siege Camp\") trackPlay(1,-1)")
+map ("control-d", "game", "uiFindType(\"Dock\") trackPlay(1,-1)")
+map ("control-p", "game", "uiFindType(\"LogicalTypeHouses\") trackPlay(1,-1)")
+map ("control-f", "game", "uiFindType(\"Hesperides Tree\") trackPlay(1,-1)")
+map ("control-g", "game", "uiFindType(\"EarlyFoodDropsite\") trackPlay(1,-1)")
+map ("control-h", "game", "uiFindType(\"Guild\") trackPlay(1,-1)")
+map ("control-i", "game", "uiFindType(\"AbstractMonument\") trackPlay(1,-1)")
+map ("control-j", "game", "uiFindType(\"Wonder\") trackPlay(1,-1)")
+map ("control-k", "game", "uiFindType(\"Tower Mirror\") trackPlay(1,-1)")
+map ("control-l", "game", "uiFindType(\"Lighthouse\") trackPlay(1,-1)")
+map ("control-m", "game", "uiFindType(\"EarlyGoldDropsite\") trackPlay(1,-1)")
+map ("control-n", "game", "uiFindType(\"EarlyWoodDropsite\") trackPlay(1,-1)")
+map ("control-o", "game", "uiFindType(\"Outpost\") trackPlay(1,-1)")
+map ("control-e", "game", "uiFindType(\"Tower\") trackPlay(1,-1)")
+map ("control-r", "game", "uiFindType(\"AbstractArmory\") trackPlay(1,-1)")
+map ("control-s", "game", "uiFindType(\"AbstractStable\") trackPlay(1,-1)")
+map ("control-t", "game", "uiFindType(\"Temple\") trackPlay(1,-1)")
+map ("control-u", "game", "uiFindType(\"Teleporter\") trackPlay(1,-1)") //UW, sky passage, ...
+map ("control-v", "game", "uiFindType(\"AbstractFortress\") trackPlay(1,-1)")
+map ("control-w", "game", "uiFindType(\"Wall Connector\") trackPlay(1,-1)")
+map ("control-x", "game", "uiFindType(\"Market\") trackPlay(1,-1)")
+map ("control-z", "game", "uiFindType(\"settlementsThatTrainVillagers\") trackPlay(1,-1)")
+
+// Same as Control-Finder, but replace everything with shift instead.
+map ("shift-a", "game", "trackInsert() trackAddWaypoint() uiFindType(\"AbstractArcheryRange\") trackPlay(1,-1)")
+map ("shift-b", "game", "trackInsert() trackAddWaypoint() uiFindType(\"AbstractBarracks\") trackPlay(1,-1)")
+map ("shift-c", "game", "trackInsert() trackAddWaypoint() uiFindType(\"Siege Camp\") trackPlay(1,-1)")
+map ("shift-d", "game", "trackInsert() trackAddWaypoint() uiFindType(\"Dock\") trackPlay(1,-1)")
+map ("shift-p", "game", "trackInsert() trackAddWaypoint() uiFindType(\"LogicalTypeHouses\") trackPlay(1,-1)")
+map ("shift-f", "game", "trackInsert() trackAddWaypoint() uiFindType(\"Hesperides Tree\") trackPlay(1,-1)")
+map ("shift-g", "game", "trackInsert() trackAddWaypoint() uiFindType(\"EarlyFoodDropsite\") trackPlay(1,-1)")
+map ("shift-h", "game", "trackInsert() trackAddWaypoint() uiFindType(\"Guild\") trackPlay(1,-1)")
+map ("shift-i", "game", "trackInsert() trackAddWaypoint() uiFindType(\"AbstractMonument\") trackPlay(1,-1)")
+map ("shift-j", "game", "trackInsert() trackAddWaypoint() uiFindType(\"Wonder\") trackPlay(1,-1)")
+map ("shift-k", "game", "trackInsert() trackAddWaypoint() uiFindType(\"Tower Mirror\") trackPlay(1,-1)")
+map ("shift-l", "game", "trackInsert() trackAddWaypoint() uiFindType(\"Lighthouse\") trackPlay(1,-1)")
+map ("shift-m", "game", "trackInsert() trackAddWaypoint() uiFindType(\"EarlyGoldDropsite\") trackPlay(1,-1)")
+map ("shift-n", "game", "trackInsert() trackAddWaypoint() uiFindType(\"EarlyWoodDropsite\") trackPlay(1,-1)")
+map ("shift-o", "game", "trackInsert() trackAddWaypoint() uiFindType(\"Outpost\") trackPlay(1,-1)")
+map ("shift-e", "game", "trackInsert() trackAddWaypoint() uiFindType(\"Tower\") trackPlay(1,-1)")
+map ("shift-r", "game", "trackInsert() trackAddWaypoint() uiFindType(\"AbstractArmory\") trackPlay(1,-1)")
+map ("shift-s", "game", "trackInsert() trackAddWaypoint() uiFindType(\"AbstractStable\") trackPlay(1,-1)")
+map ("shift-t", "game", "trackInsert() trackAddWaypoint() uiFindType(\"Temple\") trackPlay(1,-1)")
+map ("shift-u", "game", "trackInsert() trackAddWaypoint() uiFindType(\"Teleporter\") trackPlay(1,-1)") //UW, sky passage, ...
+map ("shift-v", "game", "trackInsert() trackAddWaypoint() uiFindType(\"AbstractFortress\") trackPlay(1,-1)")
+map ("shift-w", "game", "trackInsert() trackAddWaypoint() uiFindType(\"Wall Connector\") trackPlay(1,-1)")
+map ("shift-x", "game", "trackInsert() trackAddWaypoint() uiFindType(\"Market\") trackPlay(1,-1)")
+map ("shift-z", "game", "trackInsert() trackAddWaypoint() uiFindType(\"settlementsThatTrainVillagers\") trackPlay(1,-1)")
+
+////////////////////////////////////
+// Builder Accelerators
+////////////////////////////////////
+map ("a",       "BuildAccel", "tis(\"AbstractArcheryRange\")")
+map ("b",       "BuildAccel", "tis(\"AbstractBarracks\")")
+map ("c",       "BuildAccel", "tis(\"Siege Camp\")")
+map ("d",       "BuildAccel", "tis(\"Dock\")")
+map ("e",       "BuildAccel", "tis(\"LogicalTypeHouses\")")
+map ("f",       "BuildAccel", "tis(\"Farm\")")
+map ("g",       "BuildAccel", "tis(\"EarlyFoodDropsite\")")
+map ("h",       "BuildAccel", "tis(\"Guild\")")
+map ("i",       "BuildAccel", "tis(\"AbstractMonument\")")
+map ("j",       "BuildAccel", "tis(\"Wonder\")")
+map ("k",       "BuildAccel", "tis(\"Tower Mirror\")")
+map ("l",       "BuildAccel", "tis(\"Lighthouse\")")
+map ("m",       "BuildAccel", "tis(\"EarlyGoldDropsite\")")
+map ("n",       "BuildAccel", "tis(\"EarlyWoodDropsite\")")
+map ("o",       "BuildAccel", "tis(\"Outpost\")")
+map ("p",       "BuildAccel", "tis(\"Tower\")")
+map ("a",       "BuildAccel"," editMode(\"repair\")")
+map ("r",       "BuildAccel", "tis(\"AbstractArmory\")")
+map ("s",       "BuildAccel", "tis(\"AbstractStable\")")
+map ("t",       "BuildAccel", "tis(\"Temple\")")
+map ("u",       "BuildAccel", "tis(\"Sky Passage\")")
+map ("v",       "BuildAccel", "tis(\"AbstractFortress\")")
+map ("w",       "BuildAccel", "tis(\"Wall Connector\")")
+map ("x",       "BuildAccel", "tis(\"Market\")")
+//   "y" = Advance
+map ("z",       "BuildAccel", "tis(\"Settlement Level 1\")")
+
+
+////////////////////////////////////
+// Settlement Accelerators
+////////////////////////////////////
+// Greek
+map ("q", "SettlementAccel", "tis(\"Hero Greek Ajax\") tis(\"Hero Greek Jason\") tis(\"Hero Greek Theseus\")")
+map ("w", "SettlementAccel", "tis(\"Hero Greek Odysseus\") tis(\"Hero Greek Chiron\") tis(\"Hero Greek Hippolyta\")")
+map ("e", "SettlementAccel", "tis(\"Hero Greek Achilles\") tis(\"Hero Greek Atalanta\") tis(\"Hero Greek Heracles\")")
+map ("r", "SettlementAccel", "tis(\"Hero Greek Perseus\") tis(\"Hero Greek Bellerophon\") tis(\"Hero Greek Polyphemus\")")
+
+// Eggy
+map ("q", "SettlementAccel", "tis(\"Priest\")")
+map ("w", "SettlementAccel", "tis(\"Mercenary\")")
+map ("e", "SettlementAccel", "tis(\"Mercenary Cavalry\")")
+
+// Norse
+map ("q", "SettlementAccel", "tis(\"Dwarf\")")
+map ("d", "SettlementAccel", "tis(\"Dwarf\")")
+map ("w", "SettlementAccel", "tis(\"Ox Cart\")")
+map ("e", "SettlementAccel", "tis(\"Ulfsark\")")
+
+// General
+map ("a", "SettlementAccel", "tis(\"Villager Norse\") tis(\"Villager Egyptian\") tis(\"Villager Greek\") tis(\"Villager Atlantean\")")
+map ("v", "SettlementAccel", "tis(\"Villager Norse\") tis(\"Villager Egyptian\") tis(\"Villager Greek\") tis(\"Villager Atlantean\")")
+map ("b", "SettlementAccel", "unitTownBell()")
+map ("v", "SettlementAccel", "unitReturnToWork()")
+map ("y", "game", "trackInsert() trackAddWaypoint() uiFindType(\"settlementsThatTrainVillagers\") uiAgeUpDialog(\"Age 2 Fake\") trackPlay(1,-1)")
+map ("control-y", "SettlementAccel", "uiAgeUpDialog(\"Age 2 Fake\")")
+
+////////////////////////////////////
+// Dock Accelerators
+////////////////////////////////////
+map ("q", "DockAccel", "tis(\"TransportShip\")")
+map ("w", "DockAccel", "tis(\"ArcherShip\")")
+map ("e", "DockAccel", "tis(\"HammerShip\") tis(\"Fire Ship Atlantean\")")
+map ("r", "DockAccel", "tis(\"SiegeShip\")")
+map ("v", "DockAccel", "tis(\"UtilityShip\") uiToggleBuildingQueue")
+
+map ("a", "DockAccel", "tis(\"Hero Greek Argo\")")
+map ("s", "DockAccel", "tis(\"Servant\")")
+map ("D", "DockAccel", "tis(\"Kraken\") tis(\"Scylla\") tis(\"Leviathan\") tis(\"Nereid\")")
+map ("f", "DockAccel", "tis(\"Sea Turtle\") tis(\"Jormund Elver\") tis(\"Carcinos\") tis(\"Man O War\")")
+
+////////////////////////////////////
+// Market Accelerators
+////////////////////////////////////
+map ("v", "MarketAccel", "tis(\"AbstractTradeUnit\")")
+
+////////////////////////////////////
+// Greek Academy Accelerators
+////////////////////////////////////
+map ("q", "GreekAcademyAccel", "tis(\"Hoplite\")")
+map ("w", "GreekAcademyAccel", "tis(\"Hypaspist\")")
+map ("s", "GreekAcademyAccel", "tis(\"Myrmidon\")")
+
+////////////////////////////////////
+// Greek Archery Range Accelerators
+////////////////////////////////////
+map ("q", "GreekArcheryRangeAccel", "tis(\"Toxotes\")")
+map ("w", "GreekArcheryRangeAccel", "tis(\"Peltast\")")
+map ("s", "GreekArcheryRangeAccel", "tis(\"Crossbowman\")")
+
+////////////////////////////////////
+// Greek Stable Accelerators
+////////////////////////////////////
+map ("q", "GreekStableAccel", "tis(\"Hippikon\")")
+map ("w", "GreekStableAccel", "tis(\"Prodromos\")")
+map ("s", "GreekStableAccel", "tis(\"Hetairoi\")")
+
+////////////////////////////////////
+// Greek Fortress Accelerators
+////////////////////////////////////
+map ("q", "GreekFortressAccel", "tis(\"Hero Greek Ajax\") tis(\"Hero Greek Jason\") tis(\"Hero Greek Theseus\")")
+map ("w", "GreekFortressAccel", "tis(\"Hero Greek Odysseus\") tis(\"Hero Greek Chiron\") tis(\"Hero Greek Hippolyta\")")
+map ("e", "GreekFortressAccel", "tis(\"Hero Greek Achilles\") tis(\"Hero Greek Atalanta\") tis(\"Hero Greek Heracles\")")
+map ("r", "GreekFortressAccel", "tis(\"Hero Greek Perseus\") tis(\"Hero Greek Bellerophon\") tis(\"Hero Greek Polyphemus\")")
+map ("s", "GreekFortressAccel", "tis(\"Crossbowman\") tis(\"Hetairoi\") tis(\"Myrmidon\")")
+map ("d", "GreekFortressAccel", "tis(\"Helepolis\")")
+map ("f", "GreekFortressAccel", "tis(\"Petrobolos\")")
+
+////////////////////////////////////
+// Egyptian Barracks Accelerators
+////////////////////////////////////
+map ("q", "EgyptBarracksAccel", "tis(\"Spearman\")")
+map ("w", "EgyptBarracksAccel", "tis(\"Axeman\")")
+map ("e", "EgyptBarracksAccel", "tis(\"Slinger\")")
+
+////////////////////////////////////
+// Egyptian Migdol Stronghold Accelerators
+////////////////////////////////////
+map ("q", "EgyptMigdolAccel", "tis(\"Chariot Archer\")")
+map ("w", "EgyptMigdolAccel", "tis(\"Camelry\")")
+map ("e", "EgyptMigdolAccel", "tis(\"War Elephant\")")
+
+////////////////////////////////////
+// Egyptian Siege Camp Accelerators
+////////////////////////////////////
+map ("q", "EgyptSiegeCampAccel", "tis(\"Siege Tower\")")
+map ("w", "EgyptSiegeCampAccel", "tis(\"Catapult\")")
+
+////////////////////////////////////
+// Norse Long House Accelerators
+////////////////////////////////////
+map ("q", "NorseLongHouseAccel", "tis(\"Ulfsark\")")
+map ("w", "NorseLongHouseAccel", "tis(\"Throwing Axeman\")")
+map ("e", "NorseLongHouseAccel", "tis(\"Hero Norse\")")
+map ("r", "NorseLongHouseAccel", "tis(\"Raiding Cavalry\")")
+
+////////////////////////////////////
+// Norse Hill Fort Accelerators
+////////////////////////////////////		
+map ("q", "NorseFortAccel", "tis(\"Huskarl\")")
+map ("w", "NorseFortAccel", "tis(\"Jarl\")")
+map ("e", "NorseFortAccel", "tis(\"Portable Ram\")")
+map ("r", "NorseFortAccel", "tis(\"Ballista\")")
+
+////////////////////////////////////
+// Atlantean Barracks Accelerators
+////////////////////////////////////
+map ("q", "AtlanteanBarracksAccel", "tis(\"Swordsman\")")
+map ("w", "AtlanteanBarracksAccel", "tis(\"Lancer\")")
+map ("e", "AtlanteanBarracksAccel", "tis(\"Archer Atlantean\")")
+
+////////////////////////////////////
+// Atlantean Counter Barracks Accelerators
+////////////////////////////////////
+map ("q", "AtlanteanCounterAccel", "tis(\"Maceman\")")
+map ("w", "AtlanteanCounterAccel", "tis(\"Javelin Cavalry\")")
+map ("e", "AtlanteanCounterAccel", "tis(\"Chieroballista\")")
+
+////////////////////////////////////
+// Atlantean Palace Accelerators
+////////////////////////////////////
+map ("q", "AtlanteanPalaceAccel", "tis(\"Trident Soldier\")")
+map ("w", "AtlanteanPalaceAccel", "tis(\"Royal Guard\")")
+map ("e", "AtlanteanPalaceAccel", "tis(\"Fire Siphon\")")
+
+////////////////////////////////////
+// Greek Temple
+////////////////////////////////////
+map ("q", "TempleGreekAccel", "tis(\"Pegasus\")")
+map ("w", "TempleGreekAccel", "tis(\"Centaur\") tis(\"Cyclops\") tis(\"Minotaur\")")
+map ("e", "TempleGreekAccel", "tis(\"Hydra\") tis(\"Manticore\") tis(\"Nemean Lion\")")
+map ("r", "TempleGreekAccel", "tis(\"Colossus\") tis(\"Medusa\") tis(\"Chimera\")")
+
+////////////////////////////////////
+// Egyptian Temple
+////////////////////////////////////
+map ("q", "TempleEgyptianAccel", "tis(\"Priest\")")
+map ("w", "TempleEgyptianAccel", "tis(\"Anubite\") tis(\"Sphinx\") tis(\"Wadjet\")")
+map ("e", "TempleEgyptianAccel", "tis(\"Scorpion Man\") tis(\"Scarab\") tis(\"Petsuchos\")")
+map ("r", "TempleEgyptianAccel", "tis(\"Avenger\") tis(\"Mummy\") tis(\"Phoenix\")")
+map ("t", "TempleEgyptianAccel", "tis(\"Roc\")")
+
+////////////////////////////////////
+// Norse Temple
+////////////////////////////////////
+map ("q", "TempleNorseAccel", "tis(\"Hero Norse\")")
+map ("w", "TempleNorseAccel", "tis(\"Einheriar\") tis(\"Valkyrie\") tis(\"Troll\")")
+map ("e", "TempleNorseAccel", "tis(\"Battle Boar\")")
+map ("a", "TempleNorseAccel", "tis(\"Frost Giant\")")
+map ("s", "TempleNorseAccel", "tis(\"Mountain Giant\")")
+map ("d", "TempleNorseAccel", "tis(\"Fenris Wolf\") tis(\"Fire Giant\")")
+
+////////////////////////////////////
+// Atlantean Temple
+////////////////////////////////////
+map ("q", "TempleAtlanteanAccel", "tis(\"Oracle Scout\")")
+map ("w", "TempleAtlanteanAccel", "tis(\"Automaton\") tis(\"Flying Medic\") tis(\"Promethean\")")
+map ("e", "TempleAtlanteanAccel", "tis(\"Stymphalian Bird\") tis(\"Behemoth\") tis(\"Satyr\")")
+map ("r", "TempleAtlanteanAccel", "tis(\"Heka Gigantes\") tis(\"Lampades\") tis(\"Argus\")")
+
+//////////////////////////////
+// Hesperides Tree / Phoenix
+//////////////////////////////
+map ("q","game","tis(\"dryad\") tis(\"Phoenix From Egg\")")
+
+// Invoke GPs
+// Isis
+map ("control-shift-F1","game","uiSetSpecialPower(129) uiSpecialPowerAtPointer() uiSetSpecialPower(215) uiSpecialPowerAtPointer()") //A/E
+
+// Building Placement Mode
+map ("shift-mousez",       "building", "uiWheelRotatePlacedUnit")
+map ("mouse1down",         "building", "")
+map ("mouse1up",           "building", "uiBuildAtPointer")
+map ("shift-mouse1down",   "building", "")
+map ("shift-mouse1up",     "building", "uiBuildAtPointer uiLeaveModeOnUnshift")
+map ("mouse2down",         "building", "")
+map ("mouse2up",           "building", "editMode(\"none\")")
+map ("esc",                "building", "editMode(\"none\")")
+map ("mouse1doubleup",     "building", "uiBuildAtPointer")
+
+// Wall Building Mode
+map ("mouse1down",             "buildWall", "")
+map ("shift-mouse1down",       "buildWall", "")
+map ("mouse1up",               "buildWall", "uiBuildWallAtPointer(0)")
+map ("shift-mouse1up",         "buildWall", "uiBuildWallAtPointer(1)")
+map ("mouse2down",             "buildWall", "")
+map ("mouse2up",               "buildWall", "editMode(\"none\")")
+map ("esc",                    "buildWall", "editMode(\"none\")")
+map ("mouse1doubledown",       "buildWall", "")
+map ("shift-mouse1doubledown", "buildWall", "")
+map ("mouse1doubleup",         "buildWall", "uiBuildWallAtPointer(0)")
+map ("shift-mouse1doubleup",   "buildWall", "uiBuildWallAtPointer(1)")
+
+// Un-build Mode
+map ("mouse1down",     "unbuild", "")
+map ("mouse1up",       "unbuild", "uiUnbuildSelectedUnitAtPointer")
+map ("mouse2down",     "unbuild", "")
+map ("mouse2up",       "unbuild", "editMode(\"none\")")
+map ("esc",            "unbuild", "editMode(\"none\")")
+map ("mouse1doubleup", "unbuild", "uiUnbuildSelectedUnitAtPointer")
+
+// Gather point mode
+map ("shift-delete", "game", "uiClearGatherPoint()")
+map ("mouse1down", "setGatherPoint", "")
+map ("mouse1up",   "setGatherPoint", "uiSetGatherPointAtPointer editMode(\"none\")")
+map ("mouse2down", "setGatherPoint", "")
+map ("mouse2up",   "setGatherPoint", "uiSetGatherPointAtPointer editMode(\"none\")")
+map ("esc",        "setGatherPoint", "editMode(\"none\")")
+
+// Special Power Mode
+map ("shift-mousez",       "specialpower", "uiWheelRotatePlacedUnit")
+map ("mouse1down",         "specialpower", "")
+map ("mouse1up",           "specialpower", "uiSpecialPowerAtPointer")
+map ("mouse1doubleup",     "specialpower", "uiSpecialPowerAtPointer")
+map ("control-mouse2down", "specialpower", "uiSpecialPowerAtPointer editMode(\"specialpower\")")
+map ("mouse2up",           "specialpower", "editMode(\"none\")")
+map ("esc",                "specialpower", "editMode(\"none\")")
+
+// Garrison Mode
+map ("mouse1down", "garrison", "")
+map ("mouse1up",   "garrison", "uiGarrisonToPointer editMode(\"none\")")
+map ("mouse2down", "garrison", "")
+map ("mouse2up",   "garrison", "editMode(\"none\")")
+map ("esc",        "garrison", "editMode(\"none\")")
+
+// Flare
+map ("mouse1down", "flare", "")
+map ("mouse1up",   "flare", "uiFlareAtPointer editMode(\"none\")")
+map ("mouse2down", "flare", "")
+map ("mouse2up",   "flare", "editMode(\"none\")")
+map ("esc",        "flare", "editMode(\"none\")")
+
+// Help
+map ("mouse1down", "help", "")
+map ("mouse1up",   "help", "uiHelpAtPointer editMode(\"none\")")
+map ("mouse2down", "help", "")
+map ("mouse2up",   "help", "editMode(\"none\")")
+map ("esc",        "help", "editMode(\"none\")")
+
+// Repair
+map ("mouse1down", "repair", "")
+map ("mouse1up",   "repair", "uiRepairAtPointer editMode(\"none\")")
+map ("mouse2down", "repair", "")
+map ("mouse2up",   "repair", "editMode(\"none\")")
+map ("esc",        "repair", "editMode(\"none\")")
+
+// Empower
+map ("mouse1down", "empower", "")
+map ("mouse1up",   "empower", "uiEmpowerAtPointer editMode(\"none\")")
+map ("mouse2down", "empower", "")
+map ("mouse2up",   "empower", "editMode(\"none\")")
+map ("esc",        "empower", "editMode(\"none\")")
+
+// Eject At
+map ("mouse1down", "ejectat", "")
+map ("mouse1up",   "ejectat", "uiEjectAtPointer editMode(\"none\")")
+map ("mouse2down", "ejectat", "")
+map ("mouse2up",   "ejectat", "editMode(\"none\")")
+map ("esc",        "ejectat", "editMode(\"none\")")
+map ("esc",    "game", "uiEjectGarrisonedUnits()")
+
+// Guard
+map ("mouse1down", "guard", "")
+map ("mouse1up",   "guard", "uiGuardAtPointer editMode(\"none\")")
+map ("mouse2down", "guard", "")
+map ("mouse2up",   "guard", "editMode(\"none\")")
+map ("esc",        "guard", "editMode(\"none\")")
+
+// Patrol
+map ("mouse1down",       "patrol", "")
+map ("mouse1up",         "patrol", "uiPatrolAtPointer editMode(\"none\")")
+map ("shift-mouse1down", "patrol", "")
+map ("shift-mouse1up",   "patrol", "uiPatrolAtPointer uiLeaveModeOnUnshift")
+map ("mouse2down",       "patrol", "")
+map ("mouse2up",         "patrol", "editMode(\"none\")")
+map ("esc",              "patrol", "editMode(\"none\")")
+
+// Delete Units
+map ("mouse1down", "deleteunits", "uiDeleteUnits(0)")
+map ("mouse1up",   "deleteunits", "uiDeleteUnits(1)")
+map ("esc",        "deleteunits", "editMode(\"none\")")
+
+// Attack Move
+map ("mouse2up",   "attackMove", "uiWorkAtPointer editMode(\"none\")")
+map ("mouse2down", "attackMove", "")
+map ("mouse1up",   "attackMove", "uiWorkAtPointer editMode(\"none\")")
+map ("mouse1down", "attackMove", "")
+map ("esc",        "attackMove", "editMode(\"none\")")
+
+// Edit Water Tools
+map ("esc", "editwater", "editMode(\"none\") uiUnSelectWater")
+map ("mouse1down",       "editwater", "uiSelectWaterAtPointer")
+map ("mouse1up",         "editwater", "")
+
+// Paintwater Tools
+map ("esc",        "paintwater", "editMode(\"none\")")
+map ("mouse1down", "paintwater", "uiPaintWater(0)")
+map ("mouse1up",   "paintwater", "uiPaintWater(1)"
+map ("d",          "paintwater", "gadgetToggle(\"waterColorDialog\")")
+map ("c",          "paintwater", "configToggle(\"waterColorPaint\")")
+
+// Paintcliff Tools
+map ("esc",        "paintcliff", "editMode(\"none\")")
+map ("mouse1down", "paintcliff", "uiPaintCliff(0)")
+map ("mouse1up",   "paintcliff", "uiPaintCliff(1)"
+map ("mouse2down", "paintcliff", "uiPaintCliff(2)")
+map ("mouse2up",   "paintcliff", "uiPaintCliff(3)")
+
+// Modify Terrain
+map ("mouse1down",    "modifyterrain", "uiTerrainSelection(0)")
+map ("mouse1up",      "modifyterrain", "uiTerrainSelection(1)")
+map ("+[",            "modifyterrain", "uiLowerTerrainSelection")
+map ("+]",            "modifyterrain", "uiRaiseTerrainSelection")
+map ("+alt-[",        "modifyterrain", "uiLowerTerrainSelection")
+map ("+alt-]",        "modifyterrain", "uiRaiseTerrainSelection")
+map ("space",         "modifyterrain", "uiFilterTerrainSelection")
+map ("control-space", "modifyterrain", "uiFlattenTerrainSelection")
+map ("esc",           "modifyterrain", "editMode(\"none\")")
+
+// Move Unit Mode
+map ("mouse1down",          "moveunit", "uiMoveSelectionButtonDown")
+map ("mouse1up",            "moveunit", "uiMoveSelectionButtonUp")
+map ("mousez",              "moveunit", "uiRotateSelection")
+map ("esc",                 "moveunit", "editMode(\"none\")")
+map ("+arrowup",            "moveunit", "uiMoveUnitForward")
+map ("+arrowdown",          "moveunit", "uiMoveUnitBackward")
+map ("+arrowleft",          "moveunit", "uiMoveUnitLeft")
+map ("+arrowright",         "moveunit", "uiMoveUnitRight")
+map ("+control-arrowleft",  "moveunit", "uiYawUnitLeft")
+map ("+control-arrowright", "moveunit", "uiYawUnitRight")
+
+// Paint Terrain Overlay
+map ("mouse1down", "paintterrainoverlay", "uiPaint(true)")
+map ("mouse1up",   "paintterrainoverlay", "uiPaint(false)")
+map ("mouse2down", "paintterrainoverlay", "uiRemoveTerrainOverlay")
+map ("mouse2up",   "paintterrainoverlay", "")
+map ("esc",        "paintterrainoverlay", "editMode(\"none\")")
+
+// Trigger Area Selection Mode
+map ("mouse1up",     "trigselect", "")
+map ("mouse1down",   "trigselect", "uiTriggerSelectLocation()")
+map ("mouse2up",     "trigselect", "editMode(\"triggers\")")
+map ("mouse2down",   "trigselect", "")
+map ("esc",          "trigselect", "editMode(\"triggers\")")
+
+map ("esc",          "trigger", "editMode(\"none\")")
+map ("esc",          "triggroups", "editMode(\"none\")")
+map ("esc",          "camtrack", "editMode(\"none\")")
+
+// AI Chat Area Selection Mode
+map ("mouse1up",     "AILocSelect", "")
+map ("mouse1down",   "AILocSelect", "uiAIChatSelectLocation")
+map ("mouse2up",     "AILocSelect", "editMode(\"none\")")
+map ("mouse2down",   "AILocSelect", "")
+map ("esc",          "AILocSelect", "editMode(\"none\")")
+
+// Dialog Set Type Gadgets
+map ("esc",       "dialog", "uiCloseDialog")
+map ("tab",       "dialog", "uiCycleGadget(1)")
+map ("shift-tab", "dialog", "uiCycleGadget(-1)")
+map ("enter",     "dialog", "uiCycleCurrentActivate")
+
+// Field Set Type Gadgets
+map ("esc",       "fieldSet", "uiCloseFieldSet")
+map ("tab",       "fieldSet", "uiCycleGadget(1)")
+map ("shift-tab", "fieldSet", "uiCycleGadget(-1)")
+
+// Easy military drag select
+map ("shift-mouse1down", "world", "configDef(\"EasyDragMilitary\") uiSelectionButtonDown()")
+map ("shift-mouse1up", "world", "uiSelectionButtonUp() configUndef(\"EasyDragMilitary\")")
+map ("alt-mouse1down", "world", "")
+map ("alt-mouse1up", "world", "uiDoubleClickSelect(0)")
+
+//////////////////////////
+//  World Mode          //
+//////////////////////////
+map ("mouse1down",                    "world", "uiSelectionButtonDown")
+map ("mouse1up",                      "world", "uiSelectionButtonUp") //uiUnitDetailHelp(736) uiUnitDetailHelp(-1)
+map ("control-mouse1down",            "world", "uiAddSelectionButtonDown")
+map ("control-mouse1up",              "world", "uiToggleSelectionButton")
+map ("mouse2up",                      "world", "uiWorkAtPointer")
+map ("mouse2doubleup",                "world", "uiWorkAtPointer")
+map ("mouse1doubleup",                "world", "uiDoubleClickSelect(0)")
+map ("shift-mouse1doubledown",        "world", "")
+map ("shift-mouse1doubleup",          "world", "uiDoubleClickSelect(1)")
+map ("control-mouse1doubledown",      "world", "")
+map ("control-mouse1doubleup",        "world", "uiDoubleClickSelect(0, true)")
+map ("control-shift-mouse1doubledown","world", "")
+map ("control-shift-mouse1doubleup",  "world", "uiDoubleClickSelect(1, true)")
+map ("esc",                           "world", "uiClearSelection")

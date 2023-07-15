@@ -1,0 +1,513 @@
+//==============================================================================
+// Hetairoi_anim.txt
+//==============================================================================
+
+import Greek_Sword_anim.txt
+import Greek_Cavalry_Shield_anim.txt
+
+//==============================================================================
+anim Bored
+{
+//============================ Hetairoi Bored============================
+   SetSelector
+   {
+Techlogic None/Medium Cavalry/Heavy Cavalry/Champion Cavalry
+      set hotspot
+      {
+         version
+         {
+				Visual Cavalry G Hetairoi_BoredA
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot
+         }
+	 version
+         {
+				Visual Cavalry G Hetairoi_BoredB
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				Visual Cavalry G Hetairoi_BoredA
+				replacetexture cavalry g hetairoi iron/cavalry g hetairoi medium
+				replacetexture cavalry g hetairoi horse iron/cavalry g hetairoi horse medium
+				replacetexture cavalry g hetairoi head iron/cavalry g hetairoi head medium
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot
+         }
+	 version
+         {
+				Visual Cavalry G Hetairoi_BoredB
+				replacetexture cavalry g hetairoi iron/cavalry g hetairoi medium
+				replacetexture cavalry g hetairoi horse iron/cavalry g hetairoi horse medium
+				replacetexture cavalry g hetairoi head iron/cavalry g hetairoi head medium
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				Visual Cavalry G Hetairoi_BoredA
+				replacetexture cavalry g hetairoi iron/cavalry g hetairoi heavy
+				replacetexture cavalry g hetairoi horse iron/cavalry g hetairoi horse heavy
+				replacetexture cavalry g hetairoi head iron/cavalry g hetairoi head heavy
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot
+         }
+	 version
+         {
+				Visual Cavalry G Hetairoi_BoredB
+				replacetexture cavalry g hetairoi iron/cavalry g hetairoi heavy
+				replacetexture cavalry g hetairoi horse iron/cavalry g hetairoi horse heavy
+				replacetexture cavalry g hetairoi head iron/cavalry g hetairoi head heavy
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				Visual Cavalry G Hetairoi_BoredA
+				replacetexture cavalry g hetairoi iron/cavalry g hetairoi champion
+				replacetexture cavalry g hetairoi horse iron/cavalry g hetairoi horse champion
+				replacetexture cavalry g hetairoi head iron/cavalry g hetairoi head champion
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot
+         }
+	 version
+         {
+				Visual Cavalry G Hetairoi_BoredB
+				replacetexture cavalry g hetairoi iron/cavalry g hetairoi champion
+				replacetexture cavalry g hetairoi horse iron/cavalry g hetairoi horse champion
+				replacetexture cavalry g hetairoi head iron/cavalry g hetairoi head champion
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot
+         }
+      }
+   }
+}
+
+//==============================================================================
+
+anim Walk
+{
+//============================Hetairoi Walk=============================
+   SetSelector
+   {
+Techlogic None/Medium Cavalry/Heavy Cavalry/Champion Cavalry
+      set hotspot
+      {
+         version
+         {
+			Visual Cavalry G Hetairoi_WalkA
+			connect RightHand greekSword hotspot
+			connect LeftForearm GreekCavalryShield hotspot
+			tag FootstepLeft 0.15 true   
+			tag FootstepRight 0.60 true   
+			tag FootstepLeft 0.90 true   
+			tag FootstepRight 0.80 true 			
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+			Visual Cavalry G Hetairoi_WalkA
+				replacetexture cavalry g hetairoi iron/cavalry g hetairoi medium
+				replacetexture cavalry g hetairoi horse iron/cavalry g hetairoi horse medium
+				replacetexture cavalry g hetairoi head iron/cavalry g hetairoi head medium
+			connect RightHand greekSword hotspot
+			connect LeftForearm GreekCavalryShield hotspot
+			tag FootstepLeft 0.15 true   
+			tag FootstepRight 0.60 true   
+			tag FootstepLeft 0.90 true   
+			tag FootstepRight 0.80 true 			
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+			Visual Cavalry G Hetairoi_WalkA
+				replacetexture cavalry g hetairoi iron/cavalry g hetairoi heavy
+				replacetexture cavalry g hetairoi horse iron/cavalry g hetairoi horse heavy
+				replacetexture cavalry g hetairoi head iron/cavalry g hetairoi head heavy
+			connect RightHand greekSword hotspot
+			connect LeftForearm GreekCavalryShield hotspot
+			tag FootstepLeft 0.15 true   
+			tag FootstepRight 0.60 true   
+			tag FootstepLeft 0.90 true   
+			tag FootstepRight 0.80 true 			
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+			Visual Cavalry G Hetairoi_WalkA
+				replacetexture cavalry g hetairoi iron/cavalry g hetairoi champion
+				replacetexture cavalry g hetairoi horse iron/cavalry g hetairoi horse champion
+				replacetexture cavalry g hetairoi head iron/cavalry g hetairoi head champion
+			connect RightHand greekSword hotspot
+			connect LeftForearm GreekCavalryShield hotspot
+			tag FootstepLeft 0.15 true   
+			tag FootstepRight 0.60 true   
+			tag FootstepLeft 0.90 true   
+			tag FootstepRight 0.80 true 			
+         }
+      }
+   }
+}
+
+//==============================================================================
+anim Death
+{
+   SetSelector
+   {
+Techlogic None/Medium Cavalry/Heavy Cavalry/Champion Cavalry
+      set hotspot
+      {
+         version
+         {
+				Visual Cavalry G Hetairoi_DeathA
+                  tag SpecificSoundSet 0.59 false HeavyFall checkVisible 
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				Visual Cavalry G Hetairoi_DeathA
+				replacetexture cavalry g hetairoi iron/cavalry g hetairoi medium
+				replacetexture cavalry g hetairoi horse iron/cavalry g hetairoi horse medium
+				replacetexture cavalry g hetairoi head iron/cavalry g hetairoi head medium
+                  tag SpecificSoundSet 0.59 false HeavyFall checkVisible 
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				Visual Cavalry G Hetairoi_DeathA
+				replacetexture cavalry g hetairoi iron/cavalry g hetairoi heavy
+				replacetexture cavalry g hetairoi horse iron/cavalry g hetairoi horse heavy
+				replacetexture cavalry g hetairoi head iron/cavalry g hetairoi head heavy
+                  tag SpecificSoundSet 0.59 false HeavyFall checkVisible 
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				Visual Cavalry G Hetairoi_DeathA
+				replacetexture cavalry g hetairoi iron/cavalry g hetairoi champion
+				replacetexture cavalry g hetairoi horse iron/cavalry g hetairoi horse champion
+				replacetexture cavalry g hetairoi head iron/cavalry g hetairoi head champion
+                  tag SpecificSoundSet 0.59 false HeavyFall checkVisible 
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot
+         }
+      }
+   }
+}
+
+//==============================================================================
+anim Idle
+{
+   SetSelector
+   {
+Techlogic None/Medium Cavalry/Heavy Cavalry/Champion Cavalry
+      set hotspot
+      {
+         version
+         {
+				Visual Cavalry G Hetairoi_IdleA
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				Visual Cavalry G Hetairoi_IdleA
+				replacetexture cavalry g hetairoi iron/cavalry g hetairoi medium
+				replacetexture cavalry g hetairoi horse iron/cavalry g hetairoi horse medium
+				replacetexture cavalry g hetairoi head iron/cavalry g hetairoi head medium
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				Visual Cavalry G Hetairoi_IdleA
+				replacetexture cavalry g hetairoi iron/cavalry g hetairoi heavy
+				replacetexture cavalry g hetairoi horse iron/cavalry g hetairoi horse heavy
+				replacetexture cavalry g hetairoi head iron/cavalry g hetairoi head heavy
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				Visual Cavalry G Hetairoi_IdleA
+				replacetexture cavalry g hetairoi iron/cavalry g hetairoi champion
+				replacetexture cavalry g hetairoi horse iron/cavalry g hetairoi horse champion
+				replacetexture cavalry g hetairoi head iron/cavalry g hetairoi head champion
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot
+         }
+      }
+   }
+}
+
+//==============================================================================
+anim Attack
+{
+   SetSelector
+   {
+Techlogic None/Medium Cavalry/Heavy Cavalry/Champion Cavalry
+      set hotspot
+      {
+         version
+         {
+				Visual Cavalry G Hetairoi_AttackA
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                  tag Attack 0.47 true   
+                  tag GenericSound 0.40 true   
+//-- end auto generated section
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot
+         }
+	 version
+         {
+				Visual Cavalry G Hetairoi_AttackB
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                  tag Attack 0.40 true   
+                  tag GenericSound 0.40 true   
+//-- end auto generated section
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot
+         }
+				 version
+         {
+				Visual Cavalry G Hetairoi_AttackC
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                  tag Attack 0.40 true   
+                  tag GenericSound 0.40 true   
+//-- end auto generated section
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				Visual Cavalry G Hetairoi_AttackA
+				replacetexture cavalry g hetairoi iron/cavalry g hetairoi medium
+				replacetexture cavalry g hetairoi horse iron/cavalry g hetairoi horse medium
+				replacetexture cavalry g hetairoi head iron/cavalry g hetairoi head medium
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                  tag Attack 0.47 true   
+                  tag GenericSound 0.40 true   
+//-- end auto generated section
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot
+         }
+	 version
+         {
+				Visual Cavalry G Hetairoi_AttackB
+				replacetexture cavalry g hetairoi iron/cavalry g hetairoi medium
+				replacetexture cavalry g hetairoi horse iron/cavalry g hetairoi horse medium
+				replacetexture cavalry g hetairoi head iron/cavalry g hetairoi head medium
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                  tag Attack 0.40 true   
+                  tag GenericSound 0.40 true   
+//-- end auto generated section
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot
+         }
+				 version
+         {
+				Visual Cavalry G Hetairoi_AttackC
+				replacetexture cavalry g hetairoi iron/cavalry g hetairoi medium
+				replacetexture cavalry g hetairoi horse iron/cavalry g hetairoi horse medium
+				replacetexture cavalry g hetairoi head iron/cavalry g hetairoi head medium
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                  tag Attack 0.40 true   
+                  tag GenericSound 0.40 true   
+//-- end auto generated section
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				Visual Cavalry G Hetairoi_AttackA
+				replacetexture cavalry g hetairoi iron/cavalry g hetairoi heavy
+				replacetexture cavalry g hetairoi horse iron/cavalry g hetairoi horse heavy
+				replacetexture cavalry g hetairoi head iron/cavalry g hetairoi head heavy
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                  tag Attack 0.47 true   
+                  tag GenericSound 0.40 true   
+//-- end auto generated section
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot
+         }
+	 version
+         {
+				Visual Cavalry G Hetairoi_AttackB
+				replacetexture cavalry g hetairoi iron/cavalry g hetairoi heavy
+				replacetexture cavalry g hetairoi horse iron/cavalry g hetairoi horse heavy
+				replacetexture cavalry g hetairoi head iron/cavalry g hetairoi head heavy
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                  tag Attack 0.40 true   
+                  tag GenericSound 0.40 true   
+//-- end auto generated section
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot
+         }
+				 version
+         {
+				Visual Cavalry G Hetairoi_AttackC
+				replacetexture cavalry g hetairoi iron/cavalry g hetairoi heavy
+				replacetexture cavalry g hetairoi horse iron/cavalry g hetairoi horse heavy
+				replacetexture cavalry g hetairoi head iron/cavalry g hetairoi head heavy
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                  tag Attack 0.40 true   
+                  tag GenericSound 0.40 true   
+//-- end auto generated section
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+				Visual Cavalry G Hetairoi_AttackA
+				replacetexture cavalry g hetairoi iron/cavalry g hetairoi champion
+				replacetexture cavalry g hetairoi horse iron/cavalry g hetairoi horse champion
+				replacetexture cavalry g hetairoi head iron/cavalry g hetairoi head champion
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                  tag Attack 0.47 true   
+                  tag GenericSound 0.40 true   
+//-- end auto generated section
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot
+         }
+	 version
+         {
+				Visual Cavalry G Hetairoi_AttackB
+				replacetexture cavalry g hetairoi iron/cavalry g hetairoi champion
+				replacetexture cavalry g hetairoi horse iron/cavalry g hetairoi horse champion
+				replacetexture cavalry g hetairoi head iron/cavalry g hetairoi head champion
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                  tag Attack 0.40 true   
+                  tag GenericSound 0.40 true   
+//-- end auto generated section
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot
+         }
+				 version
+         {
+				Visual Cavalry G Hetairoi_AttackC
+				replacetexture cavalry g hetairoi iron/cavalry g hetairoi champion
+				replacetexture cavalry g hetairoi horse iron/cavalry g hetairoi horse champion
+				replacetexture cavalry g hetairoi head iron/cavalry g hetairoi head champion
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                  tag Attack 0.40 true   
+                  tag GenericSound 0.40 true   
+//-- end auto generated section
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot
+         }
+      }
+   }
+}
+
+//==============================================================================
+
+anim Flail
+{
+   SetSelector
+   {
+TechLogic none/Medium Cavalry/Heavy Cavalry/Champion Cavalry
+      set hotspot
+      {
+         version
+         {
+            Visual Cavalry G Hetairoi_FlailA
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot            			
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+            Visual Cavalry G Hetairoi_FlailA
+				replacetexture cavalry g hetairoi iron/cavalry g hetairoi medium
+				replacetexture cavalry g hetairoi horse iron/cavalry g hetairoi horse medium
+				replacetexture cavalry g hetairoi head iron/cavalry g hetairoi head medium
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot            			
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+            Visual Cavalry G Hetairoi_FlailA
+				replacetexture cavalry g hetairoi iron/cavalry g hetairoi heavy
+				replacetexture cavalry g hetairoi horse iron/cavalry g hetairoi horse heavy
+				replacetexture cavalry g hetairoi head iron/cavalry g hetairoi head heavy
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot            			
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+            Visual Cavalry G Hetairoi_FlailA
+				replacetexture cavalry g hetairoi iron/cavalry g hetairoi champion
+				replacetexture cavalry g hetairoi horse iron/cavalry g hetairoi horse champion
+				replacetexture cavalry g hetairoi head iron/cavalry g hetairoi head champion
+				connect RightHand greekSword hotspot
+				connect LeftForearm GreekCavalryShield hotspot            			
+         }
+      }
+   }
+}

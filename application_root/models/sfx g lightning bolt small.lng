@@ -1,0 +1,38 @@
+<lightning>
+
+   <width>0.15</width>
+   <BranchWidth>0.08</BranchWidth>
+   <segmentLength>1.0</segmentLength>
+
+   <MinBranchLength>2.0</MinBranchLength>
+   <MaxBranchLength>4.0</MaxBranchLength>
+   <MaxBranchLengthFactor>0.5</MaxBranchLengthFactor>
+
+   <material>
+      <texture>sfx g lightning bolt</texture>
+      <blend>additive</blend>
+   </material>
+
+   <MinPerturbAngle>0.0</MinPerturbAngle>
+   <MaxPerturbAngle>10</MaxPerturbAngle>
+   <MinBranchAngle>10.0</MinBranchAngle>
+   <MaxBranchAngle>20</MaxBranchAngle>
+
+   <branch>
+      <startChance>5</startChance>
+      <minChance>5.0</minChance>
+      <maxChance>25</maxChance>
+      <chanceIncFactor>2.0</chanceIncFactor>
+      <chanceDecFactor>0.2</chanceDecFactor>
+   </branch>
+
+   <anim>
+      <key time='0.0' brightness='0.0'/>
+      <key time='0.13' brightness='1.0'/>
+      <key time='0.26' brightness='0.0'/>
+      <key time='0.39' brightness='1.0'/>
+      <key time='0.52' brightness='0.0'/>
+   </anim>
+
+</lightning>
+

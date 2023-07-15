@@ -1,0 +1,236 @@
+//==============================================================================
+// goat_anim.txt
+//==============================================================================
+
+
+//==============================================================================
+anim bored
+{
+   SetSelector
+   {
+Techlogic none/Husbandry
+	SetSelector
+	{
+	  InventoryLogic 25 75
+      set hotspot
+      {
+         version
+         {
+		      Visual Animal Goat_boredA
+         }
+       }
+	  set hotspot
+	  {
+         version
+         {
+            Visual Animal Goat Fat_boredA
+         }
+       }
+	}
+	SetSelector
+	{
+	  InventoryLogic 25 75
+      set hotspot
+      {
+         version
+         {
+		      Visual Animal Goat_boredA
+		replacetexture animal goat map/animal goat map husbandry
+         }
+       }
+	  set hotspot
+	  {
+         version
+         {
+            Visual Animal Goat Fat_boredA
+		replacetexture animal goat map/animal goat map husbandry
+         }
+       }
+	}
+   }
+}
+
+//==============================================================================
+anim death
+{
+   SetSelector
+   {
+Techlogic none/Husbandry
+	SetSelector
+	{
+	  InventoryLogic 25 75
+      set hotspot
+      {
+         version
+         {
+		      Visual Animal Goat_deathA
+         }
+       }
+	  set hotspot
+	  {
+         version
+         {
+            Visual Animal Goat Fat_deathA
+         }
+       }
+	}
+	SetSelector
+	{
+	  InventoryLogic 25 75
+      set hotspot
+      {
+         version
+         {
+		      Visual Animal Goat_deathA
+		replacetexture animal goat map/animal goat map husbandry
+         }
+       }
+	  set hotspot
+	  {
+         version
+         {
+            Visual Animal Goat Fat_deathA
+		replacetexture animal goat map/animal goat map husbandry
+         }
+       }
+	}
+   }
+}
+
+//==============================================================================
+anim walk
+{
+   SetSelector
+   {
+Techlogic none/Husbandry
+	SetSelector
+	{
+	  InventoryLogic 25 75
+      set hotspot
+      {
+         version
+         {
+		      Visual Animal Goat_walkA
+            tag FootstepLeft 0.30 true   
+            tag FootstepRight 0.80 true   
+         }
+       }
+	  set hotspot
+	  {
+         version
+         {
+            Visual Animal Goat Fat_walkA
+            tag FootstepLeft 0.30 true   
+            tag FootstepRight 0.80 true   
+         }
+       }
+	}
+	SetSelector
+	{
+	  InventoryLogic 25 75
+      set hotspot
+      {
+         version
+         {
+		      Visual Animal Goat_walkA
+            tag FootstepLeft 0.30 true   
+            tag FootstepRight 0.80 true   
+		replacetexture animal goat map/animal goat map husbandry
+         }
+       }
+	  set hotspot
+	  {
+         version
+         {
+            Visual Animal Goat Fat_walkA
+            tag FootstepLeft 0.30 true   
+            tag FootstepRight 0.80 true   
+		replacetexture animal goat map/animal goat map husbandry
+         }
+       }
+	}
+   }
+}
+
+//==============================================================================
+anim idle
+{
+   SetSelector
+   {
+Techlogic none/Husbandry
+	SetSelector
+	{
+	  InventoryLogic 25 75
+      set hotspot
+      {
+         version
+         {
+		      Visual Animal Goat_idleA
+         }
+   	     version
+         {
+		      Visual Animal Goat_idleB
+         }
+		 version
+         {
+		      Visual Animal Goat_idleC
+         }
+      }
+	  set hotspot
+	  {
+         version
+         {
+            Visual Animal Goat Fat_IdleA
+         }
+         version
+         {
+            Visual Animal Goat Fat_IdleB
+         }
+         version
+         {
+            Visual Animal Goat Fat_IdleC
+         }
+      }
+	}
+	SetSelector
+	{
+	  InventoryLogic 25 75
+      set hotspot
+      {
+         version
+         {
+		      Visual Animal Goat_idleA
+		replacetexture animal goat map/animal goat map husbandry
+         }
+   	     version
+         {
+		      Visual Animal Goat_idleB
+		replacetexture animal goat map/animal goat map husbandry
+         }
+		 version
+         {
+		      Visual Animal Goat_idleC
+		replacetexture animal goat map/animal goat map husbandry
+         }
+      }
+	  set hotspot
+	  {
+         version
+         {
+            Visual Animal Goat Fat_IdleA
+		replacetexture animal goat map/animal goat map husbandry
+         }
+         version
+         {
+            Visual Animal Goat Fat_IdleB
+		replacetexture animal goat map/animal goat map husbandry
+         }
+         version
+         {
+            Visual Animal Goat Fat_IdleC
+		replacetexture animal goat map/animal goat map husbandry
+         }
+      }
+	}
+   }
+}

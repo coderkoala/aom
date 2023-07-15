@@ -1,0 +1,290 @@
+//==============================================================================
+// Norse Caravan_anim.txt
+//==============================================================================
+
+
+//==============================================================================
+anim idle
+{
+  SetSelector
+  {
+    Techlogic None/Coinage
+    SetSelector
+    {
+      InventoryLogic 0 1
+      set hotspot
+      {
+         version
+         {
+            Visual Trade N Caravan_idleA
+     	tag SpecificSoundSet 0.30 false coins checkowner 
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+            Visual Trade N Caravan_LoadedidleA
+      	tag SpecificSoundSet 0.30 false coins checkowner 
+        }
+      }   
+    }
+    SetSelector
+    {
+      InventoryLogic 0 1
+      set hotspot
+      {
+         version
+         {
+            Visual Trade N Caravan_idleA
+		replacetexture trade n caravan ox/trade n caravan ox coinage
+      	tag SpecificSoundSet 0.30 false coins checkowner 
+        }
+      }
+      set hotspot
+      {
+         version
+         {
+            Visual Trade N Caravan_LoadedidleA
+		replacetexture trade n caravan ox/trade n caravan ox coinage
+      	tag SpecificSoundSet 0.30 false coins checkowner 
+        }
+      }   
+    }
+  }
+}
+
+//==============================================================================
+anim walk
+{
+   SetSelector none
+	{
+		SetSelector
+		{
+		  Techlogic None/Coinage
+		  SetSelector
+		  {
+			InventoryLogic 0 1
+			set hotspot
+			{
+				version
+				{
+					Visual Trade N Caravan_walkA
+					tag FootstepLeft 0.00 true   
+					tag FootstepRight 0.20 true   
+					tag FootstepLeft 0.75 true   
+					tag FootstepRight 0.70 true 
+				}
+			}
+			set hotspot
+			{
+				version
+				{
+					Visual Trade N Caravan_LoadedwalkA
+					tag SpecificSoundSet 0.00 false Roll checkVisible 
+					tag SpecificSoundSet 0.98 false HorseHoof1 checkVisible 
+					tag SpecificSoundSet 0.65 false HorseHoof2 checkVisible 
+					tag SpecificSoundSet 0.80 false HorseHoof3 checkVisible 
+					tag SpecificSoundSet 0.46 false HorseHoof4 checkVisible 
+					tag FootstepLeft 0.00 true   
+					tag FootstepRight 0.20 true   
+					tag FootstepLeft 0.75 true   
+					tag FootstepRight 0.70 true 
+				}
+			}
+		  }
+		  SetSelector
+		  {
+			InventoryLogic 0 1
+			set hotspot
+			{
+				version
+				{
+					Visual Trade N Caravan_walkA
+			replacetexture trade n caravan ox/trade n caravan ox coinage
+					tag FootstepLeft 0.00 true   
+					tag FootstepRight 0.20 true   
+					tag FootstepLeft 0.75 true   
+					tag FootstepRight 0.70 true 
+				}
+			}
+			set hotspot
+			{
+				version
+				{
+					Visual Trade N Caravan_LoadedwalkA
+			replacetexture trade n caravan ox/trade n caravan ox coinage
+					tag SpecificSoundSet 0.00 false Roll checkVisible 
+					tag SpecificSoundSet 0.98 false HorseHoof1 checkVisible 
+					tag SpecificSoundSet 0.65 false HorseHoof2 checkVisible 
+					tag SpecificSoundSet 0.80 false HorseHoof3 checkVisible 
+					tag SpecificSoundSet 0.46 false HorseHoof4 checkVisible 
+					tag FootstepLeft 0.00 true   
+					tag FootstepRight 0.20 true   
+					tag FootstepLeft 0.75 true   
+					tag FootstepRight 0.70 true 
+				}
+			}
+		  }
+      		}   
+   }
+}
+
+//==============================================================================
+anim Bored
+{
+  SetSelector
+  {
+    Techlogic None/Coinage
+    SetSelector
+    {
+      InventoryLogic 0 1
+      set hotspot
+      {
+         version
+         {
+            Visual Trade N Caravan_BoredA
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+            Visual Trade N Caravan_LoadedBoredA
+         }
+      }   
+    }
+   SetSelector
+    {
+      InventoryLogic 0 1
+      set hotspot
+      {
+         version
+         {
+            Visual Trade N Caravan_BoredA
+		replacetexture trade n caravan ox/trade n caravan ox coinage
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+            Visual Trade N Caravan_LoadedBoredA
+		replacetexture trade n caravan ox/trade n caravan ox coinage
+         }
+      }   
+    }
+  }
+}
+
+//==============================================================================
+anim Flail
+{
+  SetSelector
+  {
+    Techlogic None/Coinage
+    SetSelector
+    {
+      InventoryLogic 0 1
+      set hotspot
+      {
+         version
+         {
+            Visual Trade N Caravan_FlailA
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+            Visual Trade N Caravan_LoadedFlailA
+         }
+      }   
+    }
+    SetSelector
+    {
+      InventoryLogic 0 1
+      set hotspot
+      {
+         version
+         {
+            Visual Trade N Caravan_FlailA
+		replacetexture trade n caravan ox/trade n caravan ox coinage
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+            Visual Trade N Caravan_LoadedFlailA
+ 		replacetexture trade n caravan ox/trade n caravan ox coinage
+        }
+      }   
+    }
+  }
+}
+
+//==============================================================================
+anim Death
+{
+  SetSelector
+  {
+    Techlogic None/Coinage
+    SetSelector
+    {
+      InventoryLogic 0 1
+      set hotspot
+      {
+         version
+         {
+			Visual Trade N Caravan_DeathA
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+               tag SpecificSoundSet 0.43 false HeavyFall checkVisible 
+//-- end auto generated section
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+			Visual Trade N Caravan_LoadedDeathA
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+               tag SpecificSoundSet 0.40 false BallistaDeath checkVisible 
+               tag SpecificSoundSet 0.46 false HeavyFall checkVisible 
+//-- end auto generated section
+         }
+      } 
+    }  
+    SetSelector
+    {
+      InventoryLogic 0 1
+      set hotspot
+      {
+         version
+         {
+			Visual Trade N Caravan_DeathA
+ 		replacetexture trade n caravan ox/trade n caravan ox coinage
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+               tag SpecificSoundSet 0.43 false HeavyFall checkVisible 
+//-- end auto generated section
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+			Visual Trade N Caravan_LoadedDeathA
+ 		replacetexture trade n caravan ox/trade n caravan ox coinage
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+               tag SpecificSoundSet 0.40 false BallistaDeath checkVisible 
+               tag SpecificSoundSet 0.46 false HeavyFall checkVisible 
+//-- end auto generated section
+         }
+      } 
+    }  
+  }
+}

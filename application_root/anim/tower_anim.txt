@@ -1,0 +1,5067 @@
+//==============================================================================
+// tower_anim.txt
+//==============================================================================
+
+import Construction_defines_anim.txt
+import building_damage_defines_anim.txt
+
+
+//==============================================================================
+//VisualParticle Building SFX A Lighthouse Glow Particle
+//Visualparticle Scenario E Excavetion Heaven Light
+//Visualparticle SFX A Hero Argo Glow
+//Visualparticle Special N Valkyrie Rainbow trail
+//Visualparticle World A Gold Sparkles
+//Visualparticle SFX A implode rayglow
+//Visualparticle SFX A implode ring
+define crenellations
+{
+SetSelector
+{
+	TechLogic none/Crenellations
+	   SetSelector
+   {
+   set hotspot
+   {
+      version
+      {
+               Visualnone Jimmy
+      }
+   }  
+}
+   SetSelector
+   {
+   set hotspot
+   {
+      version
+      {
+         VisualParticle Building SFX A Lighthouse Glow Particle
+      }
+   }  
+}
+}
+}
+
+//==============================================================================
+define empower
+{
+   SetSelector
+   {
+      EmpowerLogic
+      SetSelector
+      {
+         set hotspot
+         {
+            version
+            {
+               Visualnone Jimmy
+            }
+         }
+      }
+      SetSelector
+      {
+         set hotspot
+         {
+            version
+            {
+               Visualparticle SFX E Pharaoh Empower Large
+            }
+         }
+      }
+   }
+}
+
+
+//==============================================================================
+define VINEA
+{
+   set hotspot
+   {
+      version
+      {
+         Visual Building VineA
+      }
+   }  
+}
+
+//==============================================================================
+define VINEB
+{
+   set hotspot
+   {
+      version
+      {
+         Visual Building VineB
+      }
+   }  
+}
+
+//==============================================================================
+define Dust
+{
+   set hotspot
+   {
+      version
+      {
+         Visualparticle SFX A Building DustA
+      }
+   }  
+}
+
+//==============================================================================
+define Oil
+{
+   set hotspot
+   {
+      version
+      {
+         Visualparticle SFX A Oil 
+      }
+   }  
+}
+
+
+//==============================================================================
+anim Idle
+{
+   SetSelector
+   {
+      CultureLogic Egyptian/Greek/Norse/Atlantean
+      SetSelector 
+      {
+         TechLogic none/Watch tower/Guard Tower/Ballista Tower
+         SetSelector
+         {
+            ConstructionLogic 0 33 66
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Outpost
+                  connect ATTACHPOINT empower hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall A
+                  connect ATTACHPOINT empower hotspot
+         		   connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+                  connect ATTACHPOINT empower hotspot
+		            connect CHIN E_Small_Brick hotspot
+		      	   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building G TowerConstruction
+                  connect ATTACHPOINT empower hotspot
+		            connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+         }
+         SetSelector
+         {
+				TechLogic none/age 2/age 3/age 4
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building E Watch Age1
+							connect garrisonflag crenellations hotspot
+							connect ATTACHPOINT empower hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+							connect ATTACHPOINT empower hotspot
+         				connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		      			connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building E Watch Age2
+							connect garrisonflag crenellations hotspot
+							connect ATTACHPOINT empower hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+							connect ATTACHPOINT empower hotspot
+         				connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		      			connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building E Watch Age3
+							connect garrisonflag crenellations hotspot
+							connect ATTACHPOINT empower hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+							connect ATTACHPOINT empower hotspot
+         				connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		      			connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building E Watch Age4
+							connect garrisonflag crenellations hotspot
+							connect ATTACHPOINT empower hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+							connect ATTACHPOINT empower hotspot
+         				connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		      			connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}
+         }
+         SetSelector
+         {
+				TechLogic age 3/age 4
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building E Guard Tower Age3
+							connect garrisonflag crenellations hotspot
+							connect ATTACHPOINT empower hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+							connect ATTACHPOINT empower hotspot
+         				connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		      			connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building E Guard Tower Age4
+							connect garrisonflag crenellations hotspot
+							connect ATTACHPOINT empower hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+							connect ATTACHPOINT empower hotspot
+         				connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		      			connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}
+         }
+		   SetSelector
+         {
+            ConstructionLogic 0 33 66
+            set hotspot
+            {
+               version
+               {
+                  Visual Building E Ballista Tower Age4
+							connect garrisonflag crenellations hotspot
+                  connect ATTACHPOINT empower hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall A
+                  connect ATTACHPOINT empower hotspot
+         		   connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+                  connect ATTACHPOINT empower hotspot
+		            connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building G TowerConstruction
+                  connect ATTACHPOINT empower hotspot
+	         	   connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+         }
+      }
+      SetSelector 
+      {
+         TechLogic none/Watch tower/Guard Tower/Ballista Tower
+         SetSelector
+         {
+            ConstructionLogic 0 33 66
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Outpost
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall A
+         		   connect CHIN G_Small_Brick hotspot
+		   		   connect ATTACHPOINT G_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+		            connect CHIN G_Small_Brick hotspot
+		      	   connect ATTACHPOINT G_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building G TowerConstruction
+		            connect CHIN G_Small_Brick hotspot
+		   		   connect ATTACHPOINT G_Long_Brick hotspot
+               }
+            }
+         }
+         SetSelector
+         {
+				TechLogic age 2/age 3/age 4
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building g watchtower
+							connect garrisonflag crenellations hotspot
+							connect Leftleg VINEA hotspot
+							connect Rightfoot VINEA hotspot
+							connect Rightleg VINEb hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN G_Small_Brick hotspot
+		      			connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building G watchtower Age3
+							connect garrisonflag crenellations hotspot
+							connect Leftleg vINEA hotspot
+							connect Rightfoot VINEA hotspot
+							connect Rightleg VINEb hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN G_Small_Brick hotspot
+		      			connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building G watchtower Age4
+							connect garrisonflag crenellations hotspot
+							connect Leftleg vINEA hotspot
+							connect Rightfoot VINEA hotspot
+							connect Rightleg VINEb hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN G_Small_Brick hotspot
+		      			connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+				}
+         }
+         SetSelector
+         {
+				TechLogic Age 3/Age 4
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							 Visual Building g guardtower Age3
+							connect garrisonflag crenellations hotspot
+							 connect Leftleg vINEA hotspot
+							 connect Rightfoot VINEA hotspot
+							 connect Rightleg VINEb hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN G_Small_Brick hotspot
+		      			connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							 Visual Building g guardtower
+							connect garrisonflag crenellations hotspot
+							 connect Leftleg vINEA hotspot
+							 connect Rightfoot VINEA hotspot
+							 connect Rightleg VINEb hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN G_Small_Brick hotspot
+		      			connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+				}
+			}
+      }
+      SetSelector 
+      {
+         TechLogic none/Watch tower/Guard Tower/Ballista Tower
+         SetSelector
+         {
+            ConstructionLogic 0 33 66
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Outpost
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall A
+         		   connect CHIN N_Small_Brick hotspot
+		   		   connect ATTACHPOINT N_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+		            connect CHIN N_Small_Brick hotspot
+		      	   connect ATTACHPOINT N_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building G TowerConstruction
+		            connect CHIN N_Small_Brick hotspot
+		   		   connect ATTACHPOINT N_Long_Brick hotspot
+               }
+            }
+         }
+         SetSelector
+         {
+				Techlogic Age 2/Age 3/Age 4
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building N TowerAge2
+							connect garrisonflag crenellations hotspot
+							connect rightfoot vinea hotspot
+							connect righthand vinea hotspot
+							connect rightear vinea hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN N_Small_Brick hotspot
+		      			connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building N TowerAge3
+							connect garrisonflag crenellations hotspot
+							connect rightfoot vinea hotspot
+							connect righthand vinea hotspot
+							connect rightear vinea hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN N_Small_Brick hotspot
+		      			connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building N TowerAge4
+							connect garrisonflag crenellations hotspot
+							connect rightfoot vinea hotspot
+							connect righthand vinea hotspot
+							connect rightear vinea hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN N_Small_Brick hotspot
+		      			connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+				}
+         }
+         SetSelector
+         {
+            ConstructionLogic 0 33 66
+            set hotspot
+            {
+               version
+               {
+                  Visual Building E Tower age2
+							connect garrisonflag crenellations hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall A
+         		   connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+		            connect CHIN E_Small_Brick hotspot
+		      	   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+		            connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+         }
+		   SetSelector
+         {
+            ConstructionLogic 0 33 66
+            set hotspot
+            {
+               version
+               {
+                  Visual Building E Tower
+							connect garrisonflag crenellations hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall A
+         		   connect CHIN G_Small_Brick hotspot
+		   		   connect ATTACHPOINT G_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+		            connect CHIN G_Small_Brick hotspot
+		   		   connect ATTACHPOINT G_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building G TowerConstruction
+	         	   connect CHIN G_Small_Brick hotspot
+		   		   connect ATTACHPOINT G_Long_Brick hotspot
+               }
+            }
+         }
+      }
+//==============================Atlantean Towers===========================
+      SetSelector 
+      {
+         TechLogic none/Watch tower/Guard Tower/Ballista Tower
+         SetSelector
+         {
+            ConstructionLogic 0 33 66
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Outpost
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall A
+         		   connect CHIN N_Small_Brick hotspot
+		   		   connect ATTACHPOINT N_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+		            connect CHIN N_Small_Brick hotspot
+		      	   connect ATTACHPOINT N_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building G TowerConstruction
+		            connect CHIN N_Small_Brick hotspot
+		   		   connect ATTACHPOINT N_Long_Brick hotspot
+               }
+            }
+         }
+         SetSelector
+         {
+				Techlogic Age 2/Age 3/Age 4
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building X Watch Tower
+							connect garrisonflag crenellations hotspot
+							connect rightfoot vinea hotspot
+							connect LeftLeg vinea hotspot
+							connect rightear vinea hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN N_Small_Brick hotspot
+		      			connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building X Watch Tower
+							ReplaceTexture Building X Tower Watch2/Building X Tower Watch3
+							connect garrisonflag crenellations hotspot
+							connect rightfoot vinea hotspot
+							connect LeftLeg vinea hotspot
+							connect rightear vinea hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN N_Small_Brick hotspot
+		      			connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building X Watch Tower
+							ReplaceTexture Building X Tower Watch2/Building X Tower Watch4
+							connect garrisonflag crenellations hotspot
+							connect rightfoot vinea hotspot
+							connect LeftLeg vinea hotspot
+							connect rightear vinea hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN N_Small_Brick hotspot
+		      			connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+				}
+         }
+         SetSelector
+         {
+				Techlogic Age 3/Age 4
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building X Guard Tower
+							ReplaceTexture Building X Tower Watch2/Building X Tower Watch3
+							connect garrisonflag crenellations hotspot
+							connect rightfoot vinea hotspot
+							connect LeftLeg vinea hotspot
+							connect rightear vinea hotspot							
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN E_Small_Brick hotspot
+		      			connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building X Guard Tower
+							ReplaceTexture Building X Tower Watch2/Building X Tower Watch4
+							connect garrisonflag crenellations hotspot
+							connect rightfoot vinea hotspot
+							connect LeftLeg vinea hotspot
+							connect rightear vinea hotspot							
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+	         			connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+				}
+			}
+		}
+   }
+}
+
+//==============================================================================
+anim RangedAttack
+{
+   SetSelector
+   {
+      CultureLogic Egyptian/Greek/Norse/Atlantean
+      SetSelector 
+      {
+         TechLogic none/Watch tower/Guard Tower/Ballista Tower
+         SetSelector
+         {
+            ConstructionLogic 0 33 66
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Outpost
+                  connect ATTACHPOINT empower hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall A
+                  connect ATTACHPOINT empower hotspot
+         		   connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+                  connect ATTACHPOINT empower hotspot
+		            connect CHIN E_Small_Brick hotspot
+		      	   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building G TowerConstruction
+                  connect ATTACHPOINT empower hotspot
+		            connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+         }
+         SetSelector
+         {
+				TechLogic none/age 2/age 3/age 4
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building E Watch Age1
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.31 false Arrow checkVisible 
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+							connect ATTACHPOINT empower hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+							connect ATTACHPOINT empower hotspot
+         				connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		      			connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building E Watch Age2
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.00 false Arrow checkVisible 
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+							connect ATTACHPOINT empower hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+							connect ATTACHPOINT empower hotspot
+         				connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		      			connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building E Watch Age3
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.00 false Arrow checkVisible 
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+							connect ATTACHPOINT empower hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+							connect ATTACHPOINT empower hotspot
+         				connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		      			connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building E Watch Age4
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.00 false Arrow checkVisible 
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+							connect ATTACHPOINT empower hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+							connect ATTACHPOINT empower hotspot
+         				connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		      			connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}
+         }
+         SetSelector
+         {
+				TechLogic age 3/age 4
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building E Guard Tower Age3
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.00 false Arrow checkVisible 
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+							connect ATTACHPOINT empower hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+							connect ATTACHPOINT empower hotspot
+         				connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		      			connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building E Guard Tower Age4
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.00 false Arrow checkVisible 
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+							connect ATTACHPOINT empower hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+							connect ATTACHPOINT empower hotspot
+         				connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		      			connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}
+         }
+		   SetSelector
+         {
+            ConstructionLogic 0 33 66
+            set hotspot
+            {
+               version
+               {
+                  Visual Building E Ballista Tower Age4
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.00 false SwordSwing checkVisible 
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+                  connect ATTACHPOINT empower hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall A
+                  connect ATTACHPOINT empower hotspot
+         		   connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+                  connect ATTACHPOINT empower hotspot
+		            connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building G TowerConstruction
+                  connect ATTACHPOINT empower hotspot
+	         	   connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+         }
+      }
+      SetSelector 
+      {
+         TechLogic none/Watch tower/Guard Tower/Ballista Tower
+         SetSelector
+         {
+            ConstructionLogic 0 33 66
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Outpost
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.00 false Arrow checkVisible 
+//-- end auto generated section
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall A
+         		   connect CHIN G_Small_Brick hotspot
+		   		   connect ATTACHPOINT G_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+		            connect CHIN G_Small_Brick hotspot
+		      	   connect ATTACHPOINT G_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building G TowerConstruction
+		            connect CHIN G_Small_Brick hotspot
+		   		   connect ATTACHPOINT G_Long_Brick hotspot
+               }
+            }
+         }
+         SetSelector
+         {
+				TechLogic age 2/age 3/age 4
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building g watchtower
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.00 false Arrow checkVisible 
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+							connect Leftleg vINEA hotspot
+							connect Rightfoot VINEA hotspot
+							connect Rightleg VINEb hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN G_Small_Brick hotspot
+		      			connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building G watchtower Age3
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.00 false Arrow checkVisible 
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+							connect Leftleg vINEA hotspot
+							connect Rightfoot VINEA hotspot
+							connect Rightleg VINEb hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN G_Small_Brick hotspot
+		      			connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building G watchtower Age4
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.00 false Arrow checkVisible 
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+							connect Leftleg vINEA hotspot
+							connect Rightfoot VINEA hotspot
+							connect Rightleg VINEb hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN G_Small_Brick hotspot
+		      			connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+				}
+         }
+         SetSelector
+         {
+				TechLogic Age 3/Age 4
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							 Visual Building g guardtower Age3
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.00 false Arrow checkVisible 
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+							 connect Leftleg vINEA hotspot
+							 connect Rightfoot VINEA hotspot
+							 connect Rightleg VINEb hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN G_Small_Brick hotspot
+		      			connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							 Visual Building g guardtower
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.00 false Arrow checkVisible 
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+							 connect Leftleg vINEA hotspot
+							 connect Rightfoot VINEA hotspot
+							 connect Rightleg VINEb hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN G_Small_Brick hotspot
+		      			connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+				}
+			}
+		}
+      SetSelector 
+      {
+         TechLogic none/Watch tower/Guard Tower/Ballista Tower
+         SetSelector
+         {
+            ConstructionLogic 0 33 66
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Outpost
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall A
+         		   connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+		            connect CHIN E_Small_Brick hotspot
+		      	   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+		            connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+         }
+         SetSelector
+         {
+				Techlogic Age 2/Age 3/Age 4
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building N TowerAge2
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.00 false Arrow checkVisible 
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+							connect rightfoot vinea hotspot
+							connect righthand vinea hotspot
+							connect rightear vinea hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN N_Small_Brick hotspot
+		      			connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building N TowerAge3
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.00 false Arrow checkVisible 
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+							connect rightfoot vinea hotspot
+							connect righthand vinea hotspot
+							connect rightear vinea hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN N_Small_Brick hotspot
+		      			connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building N TowerAge4
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.00 false Arrow checkVisible 
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+							connect rightfoot vinea hotspot
+							connect righthand vinea hotspot
+							connect rightear vinea hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN N_Small_Brick hotspot
+		      			connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+				}
+			}
+         SetSelector
+         {
+            ConstructionLogic 0 33 66
+            set hotspot
+            {
+               version
+               {
+                  Visual Building E Tower age2
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.00 false Arrow checkVisible 
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall A
+         		   connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+		            connect CHIN E_Small_Brick hotspot
+		      	   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+		            connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+         }
+		   SetSelector
+         {
+            ConstructionLogic 0 33 66
+            set hotspot
+            {
+               version
+               {
+                  Visual Building E Tower
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.40 false Arrow checkVisible 
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall A
+         		   connect CHIN G_Small_Brick hotspot
+		   		   connect ATTACHPOINT G_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+		            connect CHIN G_Small_Brick hotspot
+		   		   connect ATTACHPOINT G_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building G TowerConstruction
+	         	   connect CHIN G_Small_Brick hotspot
+		   		   connect ATTACHPOINT G_Long_Brick hotspot
+               }
+            }
+         }
+      }
+//=====================================Atlantean Ranged Attack====================================
+      SetSelector 
+      {
+         TechLogic none/Watch tower/Guard Tower/Ballista Tower
+//=====================================None Tower====================================
+         SetSelector
+         {
+            ConstructionLogic 0 33 66
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Outpost
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall A
+         		   connect CHIN N_Small_Brick hotspot
+		   		   connect ATTACHPOINT N_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+		            connect CHIN N_Small_Brick hotspot
+		      	   connect ATTACHPOINT N_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building G TowerConstruction
+		            connect CHIN N_Small_Brick hotspot
+		   		   connect ATTACHPOINT N_Long_Brick hotspot
+               }
+            }
+         }
+//=====================================Watch Tower====================================
+         SetSelector
+         {
+				Techlogic Age 2/Age 3/Age 4
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building X Watch Tower
+							connect garrisonflag crenellations hotspot
+							connect rightfoot vinea hotspot
+							connect LeftLeg vinea hotspot
+							connect rightear vinea hotspot							
+							//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.40 false Arrow checkVisible 
+//-- end auto generated section
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN N_Small_Brick hotspot
+		      			connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+				}
+//=====================================Watch Tower Age3 Tower====================================
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building X Watch Tower
+							connect garrisonflag crenellations hotspot
+							connect rightfoot vinea hotspot
+							connect LeftLeg vinea hotspot
+							connect rightear vinea hotspot							
+							ReplaceTexture Building X Tower Watch2/Building X Tower Watch3
+							//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.40 false Arrow checkVisible 
+//-- end auto generated section
+							connect rightfoot vinea hotspot
+							connect righthand vinea hotspot
+							connect rightear vinea hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN N_Small_Brick hotspot
+		      			connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+				}
+//=====================================Watch Tower Age 4====================================
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building X Watch Tower
+							connect garrisonflag crenellations hotspot
+							connect rightfoot vinea hotspot
+							connect LeftLeg vinea hotspot
+							connect rightear vinea hotspot							
+							ReplaceTexture Building X Tower Watch2/Building X Tower Watch4
+							//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.40 false Arrow checkVisible 
+//-- end auto generated section
+							connect rightfoot vinea hotspot
+							connect righthand vinea hotspot
+							connect rightear vinea hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN N_Small_Brick hotspot
+		      			connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+				}
+         }
+//=====================================Guard Tower ====================================
+			SetSelector
+			{
+				Techlogic Age 2/Age 3/Age 4
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building X Guard Tower
+							connect garrisonflag crenellations hotspot
+							connect rightfoot vinea hotspot
+							connect LeftLeg vinea hotspot
+							connect rightear vinea hotspot							
+							//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.40 false Arrow checkVisible 
+//-- end auto generated section
+							connect rightfoot vinea hotspot
+							connect righthand vinea hotspot
+							connect rightear vinea hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN N_Small_Brick hotspot
+		      			connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+				}
+//=====================================Guard Tower Age3 Tower====================================
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building X Guard Tower
+							connect garrisonflag crenellations hotspot
+							connect rightfoot vinea hotspot
+							connect LeftLeg vinea hotspot
+							connect rightear vinea hotspot							
+							ReplaceTexture Building X Tower Watch2/Building X Tower Watch3
+							//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.40 false Arrow checkVisible 
+//-- end auto generated section
+							connect rightfoot vinea hotspot
+							connect righthand vinea hotspot
+							connect rightear vinea hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN N_Small_Brick hotspot
+		      			connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+				}
+//=====================================Guard Tower Age 4====================================
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building X Guard Tower
+							connect garrisonflag crenellations hotspot
+							connect rightfoot vinea hotspot
+							connect LeftLeg vinea hotspot
+							connect rightear vinea hotspot							
+							ReplaceTexture Building X Tower Watch2/Building X Tower Watch4
+							//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.40 false Arrow checkVisible 
+//-- end auto generated section
+							connect rightfoot vinea hotspot
+							connect righthand vinea hotspot
+							connect rightear vinea hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         					connect CHIN N_Small_Brick hotspot
+		   					connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN N_Small_Brick hotspot
+		      				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN N_Small_Brick hotspot
+		   					connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//==============================================================================
+anim Attack
+{
+   SetSelector
+   {
+      CultureLogic Egyptian/Greek/Norse/Atlantean
+      SetSelector 
+      {
+         TechLogic none/Watch tower/Guard Tower/Ballista Tower
+         SetSelector
+         {
+            ConstructionLogic 0 33 66
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Outpost
+                  connect ATTACHPOINT empower hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall A
+                  connect ATTACHPOINT empower hotspot
+         		   connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+                  connect ATTACHPOINT empower hotspot
+		            connect CHIN E_Small_Brick hotspot
+		      	   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building G TowerConstruction
+                  connect ATTACHPOINT empower hotspot
+		            connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+         }
+         SetSelector
+         {
+				TechLogic none/age 2/age 3/age 4
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building E Watch Age1
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.00 false Arrow checkVisible 
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+							connect ATTACHPOINT empower hotspot
+							connect RIGHTTHIGH Oil hotspot
+							connect RIGHTHAND Oil hotspot
+							connect leftTHIGH Oil hotspot
+							connect leftHAND Oil hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+							connect ATTACHPOINT empower hotspot
+         				connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		      			connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building E Watch Age2
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.00 false Arrow checkVisible 
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+							connect ATTACHPOINT empower hotspot
+							connect RIGHTTHIGH Oil hotspot
+							connect RIGHTHAND Oil hotspot
+							connect leftTHIGH Oil hotspot
+							connect leftHAND Oil hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+							connect ATTACHPOINT empower hotspot
+         				connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		      			connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building E Watch Age3
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.00 false Arrow checkVisible 
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+							connect ATTACHPOINT empower hotspot
+							connect RIGHTTHIGH Oil hotspot
+							connect RIGHTHAND Oil hotspot
+							connect leftTHIGH Oil hotspot
+							connect leftHAND Oil hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+							connect ATTACHPOINT empower hotspot
+         				connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		      			connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building E Watch Age4
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.00 false Arrow checkVisible 
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+							connect ATTACHPOINT empower hotspot
+							connect RIGHTTHIGH Oil hotspot
+							connect RIGHTHAND Oil hotspot
+							connect leftTHIGH Oil hotspot
+							connect leftHAND Oil hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+							connect ATTACHPOINT empower hotspot
+         				connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		      			connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}
+         }
+         SetSelector
+         {
+				TechLogic age 3/age 4
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building E Guard Tower Age3
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.00 false Arrow checkVisible 
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+							connect ATTACHPOINT empower hotspot
+							connect RIGHTTHIGH Oil hotspot
+							connect RIGHTHAND Oil hotspot
+							connect leftTHIGH Oil hotspot
+							connect leftHAND Oil hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+							connect ATTACHPOINT empower hotspot
+         				connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		      			connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building E Guard Tower Age4
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.00 false Arrow checkVisible 
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+							connect ATTACHPOINT empower hotspot
+							connect RIGHTTHIGH Oil hotspot
+							connect RIGHTHAND Oil hotspot
+							connect leftTHIGH Oil hotspot
+							connect leftHAND Oil hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+							connect ATTACHPOINT empower hotspot
+         				connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		      			connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}
+         }
+		   SetSelector
+         {
+            ConstructionLogic 0 33 66
+            set hotspot
+            {
+               version
+               {
+                  Visual Building E Ballista Tower Age4
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.00 false Arrow checkVisible 
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+                  connect ATTACHPOINT empower hotspot
+							connect RIGHTTHIGH Oil hotspot
+							connect RIGHTHAND Oil hotspot
+							connect leftTHIGH Oil hotspot
+							connect leftHAND Oil hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall A
+                  connect ATTACHPOINT empower hotspot
+         		   connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+                  connect ATTACHPOINT empower hotspot
+		            connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building G TowerConstruction
+                  connect ATTACHPOINT empower hotspot
+	         	   connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+         }
+      }
+      SetSelector 
+      {
+         TechLogic none/Watch tower/Guard Tower/Ballista Tower
+         SetSelector
+         {
+            ConstructionLogic 0 33 66
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Outpost
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.00 false Arrow checkVisible 
+//-- end auto generated section
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall A
+         		   connect CHIN G_Small_Brick hotspot
+		   		   connect ATTACHPOINT G_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+		            connect CHIN G_Small_Brick hotspot
+		      	   connect ATTACHPOINT G_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building G TowerConstruction
+		            connect CHIN G_Small_Brick hotspot
+		   		   connect ATTACHPOINT G_Long_Brick hotspot
+               }
+            }
+         }
+         SetSelector
+         {
+				TechLogic age 2/age 3/age 4
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building g watchtower
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.00 false Arrow checkVisible 
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+							connect Leftleg vINEA hotspot
+							connect Rightfoot VINEA hotspot
+							connect Rightleg VINEb hotspot
+							connect RIGHTTHIGH Oil hotspot
+							connect RIGHTHAND Oil hotspot
+							connect leftTHIGH Oil hotspot
+							connect leftHAND Oil hotspot
+
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN G_Small_Brick hotspot
+		      			connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building G watchtower Age3
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.00 false Arrow checkVisible 
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+							connect Leftleg vINEA hotspot
+							connect Rightfoot VINEA hotspot
+							connect Rightleg VINEb hotspot
+							connect RIGHTTHIGH Oil hotspot
+							connect RIGHTHAND Oil hotspot
+							connect leftTHIGH Oil hotspot
+							connect leftHAND Oil hotspot
+
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN G_Small_Brick hotspot
+		      			connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building G watchtower Age4
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.00 false Arrow checkVisible 
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+							connect Leftleg vINEA hotspot
+							connect Rightfoot VINEA hotspot
+							connect Rightleg VINEb hotspot
+							connect RIGHTTHIGH Oil hotspot
+							connect RIGHTHAND Oil hotspot
+							connect leftTHIGH Oil hotspot
+							connect leftHAND Oil hotspot
+
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN G_Small_Brick hotspot
+		      			connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+				}
+         }
+         SetSelector
+         {
+				TechLogic Age 3/Age 4
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							 Visual Building g guardtower Age3
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.00 false Arrow checkVisible 
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+							 connect Leftleg vINEA hotspot
+							 connect Rightfoot VINEA hotspot
+							 connect Rightleg VINEb hotspot
+								connect RIGHTTHIGH Oil hotspot
+								connect RIGHTHAND Oil hotspot
+								connect leftTHIGH Oil hotspot
+								connect leftHAND Oil hotspot
+
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN G_Small_Brick hotspot
+		      			connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							 Visual Building g guardtower
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.00 false Arrow checkVisible 
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+							 connect Leftleg vINEA hotspot
+							 connect Rightfoot VINEA hotspot
+							 connect Rightleg VINEb hotspot
+								connect RIGHTTHIGH Oil hotspot
+								connect RIGHTHAND Oil hotspot
+								connect leftTHIGH Oil hotspot
+								connect leftHAND Oil hotspot
+
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN G_Small_Brick hotspot
+		      			connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+				}
+			}
+		}
+      SetSelector 
+      {
+         TechLogic none/Watch tower/Guard Tower/Ballista Tower
+         SetSelector
+         {
+            ConstructionLogic 0 33 66
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Outpost
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall A
+         		   connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+		            connect CHIN E_Small_Brick hotspot
+		      	   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+		            connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+         }
+         SetSelector
+         {
+				TechLogic age 2/age 3/age 4
+				SetSelector
+				{ 
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building N TowerAge2
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+							connect rightfoot vinea hotspot
+							connect righthand vinea hotspot
+							connect rightear vinea hotspot
+							connect FACE Oil hotspot
+							connect NECK Oil hotspot
+							connect leftFOOT Oil hotspot
+							connect leftHAND Oil hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN E_Small_Brick hotspot
+		      			connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{ 
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building N TowerAge3
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+							connect rightfoot vinea hotspot
+							connect righthand vinea hotspot
+							connect rightear vinea hotspot
+							connect FACE Oil hotspot
+							connect NECK Oil hotspot
+							connect leftFOOT Oil hotspot
+							connect leftHAND Oil hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN E_Small_Brick hotspot
+		      			connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{ 
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building N TowerAge4
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+							connect rightfoot vinea hotspot
+							connect righthand vinea hotspot
+							connect rightear vinea hotspot
+							connect FACE Oil hotspot
+							connect NECK Oil hotspot
+							connect leftFOOT Oil hotspot
+							connect leftHAND Oil hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN E_Small_Brick hotspot
+		      			connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}
+			}
+         SetSelector
+         {
+            ConstructionLogic 0 33 66
+            set hotspot
+            {
+               version
+               {
+                  Visual Building E Tower age2
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall A
+         		   connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+		            connect CHIN E_Small_Brick hotspot
+		      	   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+		            connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+         }
+		   SetSelector
+         {
+            ConstructionLogic 0 33 66
+            set hotspot
+            {
+               version
+               {
+                  Visual Building E Tower
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+//-- end auto generated section
+							connect garrisonflag crenellations hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall A
+         		   connect CHIN G_Small_Brick hotspot
+		   		   connect ATTACHPOINT G_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+		            connect CHIN G_Small_Brick hotspot
+		   		   connect ATTACHPOINT G_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building G TowerConstruction
+	         	   connect CHIN G_Small_Brick hotspot
+		   		   connect ATTACHPOINT G_Long_Brick hotspot
+               }
+            }
+			}
+		}
+//=====================================Atlantean Close Attack====================================
+      SetSelector 
+      {
+         TechLogic none/Watch tower/Guard Tower/Ballista Tower
+//=====================================None Tower====================================
+         SetSelector
+         {
+            ConstructionLogic 0 33 66
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Outpost
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall A
+         		   connect CHIN N_Small_Brick hotspot
+		   		   connect ATTACHPOINT N_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+		            connect CHIN N_Small_Brick hotspot
+		      	   connect ATTACHPOINT N_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building G TowerConstruction
+		            connect CHIN N_Small_Brick hotspot
+		   		   connect ATTACHPOINT N_Long_Brick hotspot
+               }
+            }
+         }
+//=====================================Watch Tower====================================
+         SetSelector
+         {
+				Techlogic Age 2/Age 3/Age 4
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building X Watch Tower
+							connect garrisonflag crenellations hotspot
+							connect rightfoot vinea hotspot
+							connect LeftLeg vinea hotspot
+							connect rightear vinea hotspot							
+							//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.40 false Arrow checkVisible 
+//-- end auto generated section
+							connect LeftHand Oil hotspot
+							connect LeftThigh Oil hotspot
+							connect RightHand Oil hotspot
+							connect RightThigh Oil hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN N_Small_Brick hotspot
+		      			connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+				}
+//=====================================Watch Tower Age3 Tower====================================
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building X Watch Tower
+							connect garrisonflag crenellations hotspot
+							connect rightfoot vinea hotspot
+							connect LeftLeg vinea hotspot
+							connect rightear vinea hotspot							
+							ReplaceTexture Building X Tower Watch2/Building X Tower Watch3
+							//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.40 false Arrow checkVisible 
+//-- end auto generated section
+							connect LeftHand Oil hotspot
+							connect LeftThigh Oil hotspot
+							connect RightHand Oil hotspot
+							connect RightThigh Oil hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN N_Small_Brick hotspot
+		      			connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+				}
+//=====================================Watch Tower Age 4====================================
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building X Watch Tower
+							connect garrisonflag crenellations hotspot
+							connect rightfoot vinea hotspot
+							connect LeftLeg vinea hotspot
+							connect rightear vinea hotspot							
+							ReplaceTexture Building X Tower Watch2/Building X Tower Watch4
+							//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.40 false Arrow checkVisible 
+//-- end auto generated section
+							connect LeftHand Oil hotspot
+							connect LeftThigh Oil hotspot
+							connect RightHand Oil hotspot
+							connect RightThigh Oil hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN N_Small_Brick hotspot
+		      			connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+				}
+         }
+//=====================================Guard Tower ====================================
+			SetSelector
+			{
+				Techlogic Age 2/Age 3/Age 4
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building X Guard Tower
+							connect garrisonflag crenellations hotspot
+							connect rightfoot vinea hotspot
+							connect LeftLeg vinea hotspot
+							connect rightear vinea hotspot							
+							//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.40 false Arrow checkVisible 
+//-- end auto generated section
+							connect LeftHand Oil hotspot
+							connect LeftThigh Oil hotspot
+							connect RightHand Oil hotspot
+							connect RightThigh Oil hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN N_Small_Brick hotspot
+		      			connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+				}
+//=====================================Guard Tower Age3 Tower====================================
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building X Guard Tower
+							connect garrisonflag crenellations hotspot
+							connect rightfoot vinea hotspot
+							connect LeftLeg vinea hotspot
+							connect rightear vinea hotspot							
+							ReplaceTexture Building X Tower Watch2/Building X Tower Watch3
+							//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.40 false Arrow checkVisible 
+//-- end auto generated section
+							connect LeftHand Oil hotspot
+							connect LeftThigh Oil hotspot
+							connect RightHand Oil hotspot
+							connect RightThigh Oil hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN N_Small_Brick hotspot
+		      			connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+				}
+//=====================================Guard Tower Age 4====================================
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building X Guard Tower
+							connect garrisonflag crenellations hotspot
+							connect rightfoot vinea hotspot
+							connect LeftLeg vinea hotspot
+							connect rightear vinea hotspot							
+							ReplaceTexture Building X Tower Watch2/Building X Tower Watch4
+//-- auto generated by the bang animation tool
+//-- do not hand edit these values
+                     tag Attack 0.40 true   
+                     tag GenericSound 0.40 true   
+                     tag SpecificSoundSet 0.40 false Arrow checkVisible 
+//-- end auto generated section
+							connect LeftHand Oil hotspot
+							connect LeftThigh Oil hotspot
+							connect RightHand Oil hotspot
+							connect RightThigh Oil hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+							connect CHIN N_Small_Brick hotspot
+							connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN N_Small_Brick hotspot
+							connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN N_Small_Brick hotspot
+							connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+//==============================================================================
+anim Death
+{
+   SetSelector
+   {
+      CultureLogic Egyptian/Greek/Norse/Atlantean
+      SetSelector 
+      {
+         TechLogic none/Watch tower/Guard Tower/Ballista Tower
+         SetSelector
+         {
+            ConstructionLogic 0 33 66
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Outpost_Death
+							connect smoke0 dust hotspot
+							connect smoke1 dust hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall A
+                  connect ATTACHPOINT empower hotspot
+         		   connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+                  connect ATTACHPOINT empower hotspot
+		            connect CHIN E_Small_Brick hotspot
+		      	   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building G TowerConstruction
+                  connect ATTACHPOINT empower hotspot
+		            connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+         }
+         SetSelector
+         {
+				TechLogic none/age 2/age 3/age 4
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building E Watch Age1_Death
+							connect smoke0 dust hotspot
+							connect smoke1 dust hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+							connect ATTACHPOINT empower hotspot
+         				connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		      			connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building E Watch Age2_Death
+							connect smoke0 dust hotspot
+							connect smoke1 dust hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+							connect ATTACHPOINT empower hotspot
+         				connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		      			connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building E Watch Age3_Death
+							connect smoke0 dust hotspot
+							connect smoke1 dust hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+							connect ATTACHPOINT empower hotspot
+         				connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		      			connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building E Watch Age4_Death
+							connect smoke0 dust hotspot
+							connect smoke1 dust hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+							connect ATTACHPOINT empower hotspot
+         				connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		      			connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}
+         }
+         SetSelector
+         {
+				TechLogic age 3/age 4
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building E Guard Tower Age3_Death
+							connect smoke0 dust hotspot
+							connect smoke1 dust hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+							connect ATTACHPOINT empower hotspot
+         				connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		      			connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building E Guard Tower Age4_Death
+							connect smoke0 dust hotspot
+							connect smoke1 dust hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+							connect ATTACHPOINT empower hotspot
+         				connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		      			connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect ATTACHPOINT empower hotspot
+							connect CHIN E_Small_Brick hotspot
+		   				connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}
+         }
+		   SetSelector
+         {
+            ConstructionLogic 0 33 66
+            set hotspot
+            {
+               version
+               {
+                  Visual Building E Ballista Tower Age4_Death
+							connect smoke0 dust hotspot
+							connect smoke1 dust hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall A
+                  connect ATTACHPOINT empower hotspot
+         		   connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+                  connect ATTACHPOINT empower hotspot
+		            connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building G TowerConstruction
+                  connect ATTACHPOINT empower hotspot
+	         	   connect CHIN E_Small_Brick hotspot
+		   		   connect ATTACHPOINT E_Long_Brick hotspot
+               }
+            }
+         }
+      }
+      SetSelector 
+      {
+         TechLogic none/Watch tower/Guard Tower/Ballista Tower
+         SetSelector
+         {
+            ConstructionLogic 0 33 66
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Outpost_Death
+							connect smoke0 dust hotspot
+							connect smoke1 dust hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall A
+         		   connect CHIN G_Small_Brick hotspot
+		   		   connect ATTACHPOINT G_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+		            connect CHIN G_Small_Brick hotspot
+		      	   connect ATTACHPOINT G_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building G TowerConstruction
+		            connect CHIN G_Small_Brick hotspot
+		   		   connect ATTACHPOINT G_Long_Brick hotspot
+               }
+            }
+         }
+         SetSelector
+         {
+				TechLogic age 2/age 3/age 4
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building g watchtower_Death
+							connect smoke0 dust hotspot
+							connect smoke1 dust hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN G_Small_Brick hotspot
+		      			connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building G watchtower Age3_Death
+							connect smoke0 dust hotspot
+							connect smoke1 dust hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN G_Small_Brick hotspot
+		      			connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building G watchtower Age4_Death
+							connect smoke0 dust hotspot
+							connect smoke1 dust hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN G_Small_Brick hotspot
+		      			connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+				}
+         }
+         SetSelector
+         {
+				TechLogic Age 3/Age 4
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							 Visual Building g guardtower Age3_Death
+							connect smoke0 dust hotspot
+							connect smoke1 dust hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN G_Small_Brick hotspot
+		      			connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							 Visual Building g guardtower_Death
+							connect smoke0 dust hotspot
+							connect smoke1 dust hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN G_Small_Brick hotspot
+		      			connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN G_Small_Brick hotspot
+		   				connect ATTACHPOINT G_Long_Brick hotspot
+						}
+					}
+				}
+			}
+      }
+      SetSelector 
+      {
+         TechLogic none/Watch tower/Guard Tower/Ballista Tower
+         SetSelector
+         {
+            ConstructionLogic 0 33 66
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Outpost_Death
+							connect smoke0 dust hotspot
+							connect smoke1 dust hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall A
+         		   connect CHIN N_Small_Brick hotspot
+		   		   connect ATTACHPOINT N_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building Construction XSmall B
+		            connect CHIN N_Small_Brick hotspot
+		      	   connect ATTACHPOINT N_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+                  Visual Building G TowerConstruction
+		            connect CHIN N_Small_Brick hotspot
+		   		   connect ATTACHPOINT N_Long_Brick hotspot
+               }
+            }
+         }
+         SetSelector
+         {
+				Techlogic Age 2/Age 3/Age 4
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building N TowerAge2_Death
+							connect smoke0 dust hotspot
+							connect smoke1 dust hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN N_Small_Brick hotspot
+		      			connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building N TowerAge3_Death
+							connect smoke0 dust hotspot
+							connect smoke1 dust hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN N_Small_Brick hotspot
+		      			connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building N TowerAge4_Death
+							connect smoke0 dust hotspot
+							connect smoke1 dust hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN N_Small_Brick hotspot
+		      			connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+				}
+         }
+      }
+//==============================Atlantean Towers===========================
+      SetSelector 
+      {
+         TechLogic none/Watch tower/Guard Tower/Ballista Tower
+         SetSelector
+         {
+            ConstructionLogic 0 33 66
+            set hotspot
+            {
+               version
+               {
+					Visual Building Outpost_death
+					connect smoke0 dust hotspot
+					connect smoke1 dust hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+					Visual Building Construction XSmall A
+					connect CHIN N_Small_Brick hotspot
+					connect ATTACHPOINT N_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+					Visual Building Construction XSmall B
+					connect CHIN N_Small_Brick hotspot
+					connect ATTACHPOINT N_Long_Brick hotspot
+               }
+            }
+            set hotspot
+            {
+               version
+               {
+					Visual Building G TowerConstruction
+					connect CHIN N_Small_Brick hotspot
+					connect ATTACHPOINT N_Long_Brick hotspot
+               }
+            }
+         }
+         SetSelector
+         {
+				Techlogic Age 2/Age 3/Age 4
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building X Watch Tower_death						
+							connect smoke0 dust hotspot
+							connect smoke1 dust hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         					connect CHIN N_Small_Brick hotspot
+		   					connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN N_Small_Brick hotspot
+							connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN N_Small_Brick hotspot
+							connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building X Watch Tower_death							
+							ReplaceTexture Building X Tower Watch2/Building X Tower Watch3
+							connect smoke0 dust hotspot
+							connect smoke1 dust hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+         				connect CHIN N_Small_Brick hotspot
+		   				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN N_Small_Brick hotspot
+		      				connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN N_Small_Brick hotspot
+		   					connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building X Watch Tower_death
+							ReplaceTexture Building X Tower Watch2/Building X Tower Watch4
+							connect smoke0 dust hotspot
+							connect smoke1 dust hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+							connect CHIN N_Small_Brick hotspot
+							connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN N_Small_Brick hotspot
+							connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building G TowerConstruction
+							connect CHIN N_Small_Brick hotspot
+							connect ATTACHPOINT N_Long_Brick hotspot
+						}
+					}
+				}
+			}
+			SetSelector
+			{
+				Techlogic Age 2/Age 3/Age 4
+				SetSelector
+				{			
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building X Guard Tower_death
+							ReplaceTexture Building X Tower Watch2/Building X Tower Watch3
+							connect smoke0 dust hotspot
+							connect smoke1 dust hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+							connect CHIN E_Small_Brick hotspot
+							connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN E_Small_Brick hotspot
+							connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN E_Small_Brick hotspot
+							connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}
+				SetSelector
+				{			
+					ConstructionLogic 0 33 66
+					set hotspot
+					{
+						version
+						{
+							Visual Building X Guard Tower_death
+							ReplaceTexture Building X Tower Watch2/Building X Tower Watch4
+							connect smoke0 dust hotspot
+							connect smoke1 dust hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall A
+							connect CHIN E_Small_Brick hotspot
+							connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN E_Small_Brick hotspot
+							connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+					set hotspot
+					{
+						version
+						{
+							Visual Building Construction XSmall B
+							connect CHIN E_Small_Brick hotspot
+							connect ATTACHPOINT E_Long_Brick hotspot
+						}
+					}
+				}				
+			}
+      }
+   }
+}

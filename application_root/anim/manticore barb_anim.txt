@@ -1,0 +1,29 @@
+//==============================================================================
+// manticor barbs_anim.txt
+//==============================================================================
+
+
+//==============================================================================
+anim Idle
+{
+   SetSelector none
+   { 
+	Techlogic None/Sun Ray
+      set hotspot
+      {
+         version
+         {
+            Visual Special G Manticore Barbs
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+            Visual Special G Manticore Barbs
+	replacetexture special g manticore barbs/special g manticore barbs upgrade
+         }
+      }
+   }
+}
+

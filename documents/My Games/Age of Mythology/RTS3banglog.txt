@@ -1,0 +1,18 @@
+===============================================================
+File 'RTS3banglog.txt' opened at Sat Jul 15 21:53:42 2023
+===============================================================
+
+PreGame  11:  Initializing Graphics.  Requested: 1920x1080x32
+PreGame  3348:  Initializing Graphics.  Using: 1920x1080x32
+PreGame  4336:  Game startup complete (7.66 sec)!
+PreGame  4336:  ------------------------------------------------------------
+164212   00:02:44:  Initializing Graphics.  Requested: 1920x1080x32
+164212   00:02:44:  Initializing Graphics.  Using: 1920x1080x32
+169636   00:02:49:  Initializing Graphics.  Requested: 1920x1080x32
+169636   00:02:49:  Initializing Graphics.  Using: 1920x1080x32
+230757   00:03:50:  Initializing Graphics.  Requested: 1920x1080x32
+230757   00:03:50:  Initializing Graphics.  Using: 1920x1080x32
+239547   00:03:59:  Initializing Graphics.  Requested: 1920x1080x32
+239547   00:03:59:  Initializing Graphics.  Using: 1920x1080x32
+456849   00:07:36:  Initializing Graphics.  Requested: 1920x1080x32
+456849   00:07:36:  Initializing Graphics.  Using: 1920x1080x32

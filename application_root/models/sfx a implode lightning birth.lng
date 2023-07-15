@@ -1,0 +1,44 @@
+<lightning>
+
+   <width>2</width>
+   <BranchWidth>.8</BranchWidth>
+   <segmentLength>4</segmentLength>
+
+   <MinBranchLength>2.0</MinBranchLength>
+   <MaxBranchLength>4.0</MaxBranchLength>
+   <MaxBranchLengthFactor>1</MaxBranchLengthFactor>
+
+   <material>
+      <texture>SFX A Implode Lighting</texture>
+      <blend>additive</blend>
+   </material>
+
+   <MinPerturbAngle>5.0</MinPerturbAngle>
+   <MaxPerturbAngle>10</MaxPerturbAngle>
+   <MinBranchAngle>10.0</MinBranchAngle>
+   <MaxBranchAngle>20</MaxBranchAngle>
+
+   <branch>
+      <startChance>0</startChance>
+      <minChance>0</minChance>
+      <maxChance>0</maxChance>
+      <chanceIncFactor>0</chanceIncFactor>
+      <chanceDecFactor>0</chanceDecFactor>
+   </branch>
+
+   <anim>
+		<key time='0.00' brightness='0.0'/>
+		<key time='0.10' brightness='0.6'/>
+		<key time='0.20' brightness='0.2'/>
+		<key time='0.30' brightness='0.8'/>
+		<key time='0.40' brightness='0.3'/>
+		<key time='0.50' brightness='0.8'/>
+		<key time='0.60' brightness='0.3'/>
+		<key time='0.70' brightness='0.6'/>
+		<key time='0.80' brightness='0.4'/>
+		<key time='0.90' brightness='0.6'/>
+		<key time='1.00' brightness='0.0'/>
+
+   </anim>
+
+</lightning>

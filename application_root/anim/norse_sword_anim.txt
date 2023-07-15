@@ -1,0 +1,44 @@
+//==============================================================================
+define NorseSword
+{
+   SetSelector
+   {
+      TechLogic none/Copper Weapons/Bronze Weapons/Iron Weapons/Hammer of the Gods
+      set hotspot
+      {
+         version
+         {
+            Visual Attachments N Sword Standard
+         }
+      }         
+      set hotspot
+      {
+         version
+         {
+            Visual Attachments N Sword Copper
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+            Visual Attachments N Sword Bronze
+         }
+      }
+      set hotspot
+      {
+         version
+         {
+            Visual Attachments N Sword Iron
+         }
+      }
+       set hotspot
+      {
+         version
+         {
+            Visual Attachments N Sword Iron
+	replacetexture attachments n sword iron/attachments n sword thor
+         }
+      }
+  }
+}
